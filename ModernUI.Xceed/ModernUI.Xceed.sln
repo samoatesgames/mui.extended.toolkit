@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.Toolkit", "ModernUI.Xceed.Toolkit\ModernUI.Xceed.Toolkit.csproj", "{5A634859-F873-42B4-A533-F05404A22378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.Toolkit.Example", "Examples\ModernUI.Xceed.Toolkit.Example\ModernUI.Xceed.Toolkit.Example.csproj", "{C801FCF3-A992-40FD-9C03-AAF46F2C709C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A634859-F873-42B4-A533-F05404A22378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A634859-F873-42B4-A533-F05404A22378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A634859-F873-42B4-A533-F05404A22378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A634859-F873-42B4-A533-F05404A22378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C801FCF3-A992-40FD-9C03-AAF46F2C709C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C801FCF3-A992-40FD-9C03-AAF46F2C709C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C801FCF3-A992-40FD-9C03-AAF46F2C709C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C801FCF3-A992-40FD-9C03-AAF46F2C709C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C801FCF3-A992-40FD-9C03-AAF46F2C709C} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
+	EndGlobalSection
+EndGlobal
