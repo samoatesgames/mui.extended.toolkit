@@ -14,6 +14,7 @@
                                        Background="{DynamicResource ButtonBackground}"
                                        BorderBrush="{DynamicResource ButtonBorder}"
                                        CornerRadius="0"
+                                       BorderThickness="1,2,2,2"
                                        RenderChecked="{Binding IsOpen, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=xctk:CalculatorUpDown}}"
                                        RenderEnabled="{Binding IsEnabled, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=xctk:CalculatorUpDown}}"
 									   RenderMouseOver="{TemplateBinding IsMouseOver}"
