@@ -24,13 +24,18 @@ The following controls have had style resources fully created for them:
  * SingleUpDown
  * TimeSpanUpDown
  
+### Button Controls
+
+ * DropDownButton
+ * SplitButton
+ 
 ### Misc Controls
 
- * NumericUpDown
  * ChromeButton
+ * NumericUpDown
 
 ## Screenshots
 
-![Up/Down Controls (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/UpDown-Controls-Dark.png "UpDown Controls (Dark)")
+![Controls (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Dark-Example.png "Controls (Dark)")
 
-![Up/Down Controls (Light)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/UpDown-Controls-Light.png "UpDown Controls (Light)")
+![Controls (Light)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Light-Example.png "Controls (Light)")

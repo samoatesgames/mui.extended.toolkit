@@ -6,7 +6,9 @@
         <ResourceDictionary Source="Controls/ButtonSpinner.xaml" />
         <ResourceDictionary Source="Controls/CalculatorUpDown.xaml" />
         <ResourceDictionary Source="Controls/DateTimeUpDown.xaml" />
+        <ResourceDictionary Source="Controls/DropDownButton.xaml" />
         <ResourceDictionary Source="Controls/NumericUpDown.xaml" />
+        <ResourceDictionary Source="Controls/SplitButton.xaml" />
         <ResourceDictionary Source="Controls/TimeSpanUpDown.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
