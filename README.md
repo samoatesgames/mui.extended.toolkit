@@ -28,6 +28,11 @@ The following controls have had style resources fully created for them:
 
  * DropDownButton
  * SplitButton
+
+### Color Controls
+
+ * ColorCanvas
+ * ColorPicker
  
 ### Misc Controls
 
@@ -38,6 +43,8 @@ The following controls have had style resources fully created for them:
 
 ### TODO
 
+The following controls still need styles implementing for them:
+
  * AvalonDock
  * AutoSelectTextBox
  * BusyIndicator
@@ -46,8 +53,6 @@ The following controls have had style resources fully created for them:
  * ChildWindow
  * CollectionControl
  * CollectionControlDialog
- * ColorCanvas
- * ColorPicker
  * DataGrid
  * DateTimePicker
  * Magnifier

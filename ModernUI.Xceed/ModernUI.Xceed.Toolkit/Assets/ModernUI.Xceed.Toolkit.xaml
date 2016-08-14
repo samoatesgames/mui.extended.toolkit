@@ -6,6 +6,8 @@
         <ResourceDictionary Source="Controls/ButtonSpinner.xaml" />
         <ResourceDictionary Source="Controls/Calculator.xaml" />
         <ResourceDictionary Source="Controls/CalculatorUpDown.xaml" />
+        <ResourceDictionary Source="Controls/ColorCanvas.xaml" />
+        <ResourceDictionary Source="Controls/ColorPicker.xaml" />
         <ResourceDictionary Source="Controls/DateTimeUpDown.xaml" />
         <ResourceDictionary Source="Controls/DropDownButton.xaml" />
         <ResourceDictionary Source="Controls/NumericUpDown.xaml" />

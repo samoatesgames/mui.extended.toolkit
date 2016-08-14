@@ -41,7 +41,13 @@
 
             <Label Content="Calculator Example" Margin="4" />
             <StackPanel>
-                <xctk:Calculator />
+                <xctk:Calculator Margin="2" />
+            </StackPanel>
+
+            <Label Content="Color Examples" Margin="4" />
+            <StackPanel>
+                <xctk:ColorCanvas Margin="2" SelectedColor="{DynamicResource AccentColor}" />
+                <xctk:ColorPicker Margin="2" SelectedColor="{DynamicResource AccentColor}" />
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
