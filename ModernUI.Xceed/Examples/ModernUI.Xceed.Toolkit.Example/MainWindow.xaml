@@ -9,35 +9,42 @@
         Style="{StaticResource BlankWindow}"
         Title="ModernUI.Xceed.Toolkit Example" Height="600" Width="412">
 
-    <StackPanel>
-        <Label Content="Up/Down Examples" Margin="4" />
+    <ScrollViewer>
         <StackPanel>
-            <xctk:ByteUpDown Watermark="Byte Up/Down Example..." Margin="2" />
-            <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
-            <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
-            <xctk:DecimalUpDown Watermark="Decimal Up/Down Example..." Margin="2" />
-            <xctk:DoubleUpDown Watermark="Double Up/Down Example..." Margin="2" />
-            <xctk:IntegerUpDown Watermark="Integer Up/Down Example..." Margin="2" />
-            <xctk:LongUpDown Watermark="Long Up/Down Example..." Margin="2" />
-            <xctk:ShortUpDown Watermark="Short Up/Down Example..." Margin="2" />
-            <xctk:SingleUpDown Watermark="Single Up/Down Example..." Margin="2" />
-            <xctk:TimeSpanUpDown Watermark="TimeSpan Up/Down Example..." Margin="2" />
-        </StackPanel>
+            <Label Content="Up/Down Examples" Margin="4" />
+            <StackPanel>
+                <xctk:ByteUpDown Watermark="Byte Up/Down Example..." Margin="2" />
+                <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
+                <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
+                <xctk:DecimalUpDown Watermark="Decimal Up/Down Example..." Margin="2" />
+                <xctk:DoubleUpDown Watermark="Double Up/Down Example..." Margin="2" />
+                <xctk:IntegerUpDown Watermark="Integer Up/Down Example..." Margin="2" />
+                <xctk:LongUpDown Watermark="Long Up/Down Example..." Margin="2" />
+                <xctk:ShortUpDown Watermark="Short Up/Down Example..." Margin="2" />
+                <xctk:SingleUpDown Watermark="Single Up/Down Example..." Margin="2" />
+                <xctk:TimeSpanUpDown Watermark="TimeSpan Up/Down Example..." Margin="2" />
+            </StackPanel>
 
-        <Label Content="Button Examples" Margin="4" />
-        <StackPanel>
-            <xctk:DropDownButton Content="Drop Down Button" Margin="2">
-                <xctk:DropDownButton.DropDownContent>
-                    <TextBlock Padding="4">Drop down button example content...</TextBlock>
-                </xctk:DropDownButton.DropDownContent>
-            </xctk:DropDownButton>
-            <xctk:SplitButton Content="Split Button" Margin="2">
-                <xctk:SplitButton.DropDownContent>
-                    <TextBlock Padding="4">Split button example content...</TextBlock>
-                </xctk:SplitButton.DropDownContent>
-            </xctk:SplitButton>
+            <Label Content="Button Examples" Margin="4" />
+            <StackPanel>
+                <xctk:DropDownButton Content="Drop Down Button" Margin="2">
+                    <xctk:DropDownButton.DropDownContent>
+                        <TextBlock Padding="4">Drop down button example content...</TextBlock>
+                    </xctk:DropDownButton.DropDownContent>
+                </xctk:DropDownButton>
+                <xctk:SplitButton Content="Split Button" Margin="2">
+                    <xctk:SplitButton.DropDownContent>
+                        <TextBlock Padding="4">Split button example content...</TextBlock>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+            </StackPanel>
+
+            <Label Content="Calculator Example" Margin="4" />
+            <StackPanel>
+                <xctk:Calculator />
+            </StackPanel>
         </StackPanel>
-    </StackPanel>
+    </ScrollViewer>
 
 </mui:ModernWindow>
 

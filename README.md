@@ -31,6 +31,8 @@ The following controls have had style resources fully created for them:
  
 ### Misc Controls
 
+ * ButtonSpinner
+ * Calculator
  * ChromeButton
  * NumericUpDown
 
@@ -39,8 +41,6 @@ The following controls have had style resources fully created for them:
  * AvalonDock
  * AutoSelectTextBox
  * BusyIndicator
- * ButtonSpinner
- * Calculator
  * CheckComboBox
  * CheckListBox
  * ChildWindow
