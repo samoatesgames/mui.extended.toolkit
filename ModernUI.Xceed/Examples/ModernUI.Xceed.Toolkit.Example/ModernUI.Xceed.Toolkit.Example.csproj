@@ -75,8 +75,50 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ButtonControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CalculatorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ColorControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\License.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UpDownControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ButtonControls.xaml.cs">
+      <DependentUpon>ButtonControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CalculatorControl.xaml.cs">
+      <DependentUpon>CalculatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ColorControls.xaml.cs">
+      <DependentUpon>ColorControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\License.xaml.cs">
+      <DependentUpon>License.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UpDownControls.xaml.cs">
+      <DependentUpon>UpDownControls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

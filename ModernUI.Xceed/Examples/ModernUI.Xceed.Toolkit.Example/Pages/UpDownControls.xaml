@@ -1,0 +1,25 @@
+﻿<Page x:Class="ModernUI.Xceed.Toolkit.Example.Pages.UpDownControls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="UpDownControls">
+
+    <ScrollViewer>
+        <StackPanel>
+            <xctk:ByteUpDown Watermark="Byte Up/Down Example..." Margin="2" />
+            <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
+            <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
+            <xctk:DecimalUpDown Watermark="Decimal Up/Down Example..." Margin="2" />
+            <xctk:DoubleUpDown Watermark="Double Up/Down Example..." Margin="2" />
+            <xctk:IntegerUpDown Watermark="Integer Up/Down Example..." Margin="2" />
+            <xctk:LongUpDown Watermark="Long Up/Down Example..." Margin="2" />
+            <xctk:ShortUpDown Watermark="Short Up/Down Example..." Margin="2" />
+            <xctk:SingleUpDown Watermark="Single Up/Down Example..." Margin="2" />
+            <xctk:TimeSpanUpDown Watermark="TimeSpan Up/Down Example..." Margin="2" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

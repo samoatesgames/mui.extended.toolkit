@@ -1,56 +1,26 @@
 ﻿<mui:ModernWindow x:Class="ModernUI.Xceed.Toolkit.Example.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-        mc:Ignorable="d"
-        Style="{StaticResource BlankWindow}"
-        Title="ModernUI.Xceed.Toolkit Example" Height="600" Width="412">
+        ContentSource="Pages/About.xaml"
+        Title="ModernUI.Xceed.Toolkit Example" Height="480" Width="800">
 
-    <ScrollViewer>
-        <StackPanel>
-            <Label Content="Up/Down Examples" Margin="4" />
-            <StackPanel>
-                <xctk:ByteUpDown Watermark="Byte Up/Down Example..." Margin="2" />
-                <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
-                <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
-                <xctk:DecimalUpDown Watermark="Decimal Up/Down Example..." Margin="2" />
-                <xctk:DoubleUpDown Watermark="Double Up/Down Example..." Margin="2" />
-                <xctk:IntegerUpDown Watermark="Integer Up/Down Example..." Margin="2" />
-                <xctk:LongUpDown Watermark="Long Up/Down Example..." Margin="2" />
-                <xctk:ShortUpDown Watermark="Short Up/Down Example..." Margin="2" />
-                <xctk:SingleUpDown Watermark="Single Up/Down Example..." Margin="2" />
-                <xctk:TimeSpanUpDown Watermark="TimeSpan Up/Down Example..." Margin="2" />
-            </StackPanel>
-
-            <Label Content="Button Examples" Margin="4" />
-            <StackPanel>
-                <xctk:DropDownButton Content="Drop Down Button" Margin="2">
-                    <xctk:DropDownButton.DropDownContent>
-                        <TextBlock Padding="4">Drop down button example content...</TextBlock>
-                    </xctk:DropDownButton.DropDownContent>
-                </xctk:DropDownButton>
-                <xctk:SplitButton Content="Split Button" Margin="2">
-                    <xctk:SplitButton.DropDownContent>
-                        <TextBlock Padding="4">Split button example content...</TextBlock>
-                    </xctk:SplitButton.DropDownContent>
-                </xctk:SplitButton>
-            </StackPanel>
-
-            <Label Content="Calculator Example" Margin="4" />
-            <StackPanel>
-                <xctk:Calculator Margin="2" />
-            </StackPanel>
-
-            <Label Content="Color Examples" Margin="4" />
-            <StackPanel>
-                <xctk:ColorCanvas Margin="2" SelectedColor="{DynamicResource AccentColor}" />
-                <xctk:ColorPicker Margin="2" SelectedColor="{DynamicResource AccentColor}" />
-            </StackPanel>
-        </StackPanel>
-    </ScrollViewer>
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="ModernUI.Xceed.Toolkit" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="About" Source="Pages/About.xaml" />
+                <mui:Link DisplayName="License" Source="Pages/License.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Controls" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="UpDown Controls" Source="Pages/UpDownControls.xaml" />
+                <mui:Link DisplayName="Button Controls" Source="Pages/ButtonControls.xaml" />
+                <mui:Link DisplayName="Calculator Control" Source="Pages/CalculatorControl.xaml" />
+                <mui:Link DisplayName="Color Controls" Source="Pages/ColorControls.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
 
 </mui:ModernWindow>
 
