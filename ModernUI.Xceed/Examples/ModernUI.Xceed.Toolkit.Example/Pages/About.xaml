@@ -10,7 +10,7 @@
     <TextBlock TextWrapping="Wrap">
         ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.<LineBreak/>
         <LineBreak/>
-        WPF Extended Toolkit: http://wpftoolkit.codeplex.com/<LineBreak/>
-        ModernUI Framework: https://github.com/firstfloorsoftware/mui<LineBreak/>
+        WPF Extended Toolkit: <Hyperlink NavigateUri="http://wpftoolkit.codeplex.com/">http://wpftoolkit.codeplex.com/</Hyperlink><LineBreak/>
+        ModernUI Framework: <Hyperlink NavigateUri="https://github.com/firstfloorsoftware/mui">https://github.com/firstfloorsoftware/mui</Hyperlink><LineBreak/>
     </TextBlock>
 </Page>

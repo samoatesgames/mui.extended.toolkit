@@ -87,6 +87,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\CheckListControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ColorControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +113,9 @@
     </Compile>
     <Compile Include="Pages\CalculatorControl.xaml.cs">
       <DependentUpon>CalculatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CheckListControls.xaml.cs">
+      <DependentUpon>CheckListControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ColorControls.xaml.cs">
       <DependentUpon>ColorControls.xaml</DependentUpon>

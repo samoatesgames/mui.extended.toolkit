@@ -34,6 +34,11 @@ The following controls have had style resources fully created for them:
  * ColorCanvas
  * ColorPicker
  
+### Check Controls
+
+ * CheckComboBox
+ * CheckListBox
+ 
 ### Misc Controls
 
  * ButtonSpinner
@@ -48,8 +53,6 @@ The following controls still need styles implementing for them:
  * AvalonDock
  * AutoSelectTextBox
  * BusyIndicator
- * CheckComboBox
- * CheckListBox
  * ChildWindow
  * CollectionControl
  * CollectionControlDialog
@@ -78,6 +81,12 @@ The following controls still need styles implementing for them:
  
 ## Screenshots
 
-![Controls (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Dark-Example.png "Controls (Dark)")
+![Buttons (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Buttons-Dark.png "Buttons (Dark)")
 
-![Controls (Light)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Light-Example.png "Controls (Light)")
+![Caculator (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Caculator-Dark.png "Caculator (Dark)")
+
+![Checklist (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Checklist-Dark.png "Checklist (Dark)")
+
+![Colors (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Colors-Back.png "Colors (Dark)")
+
+![UpDown (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/UpDown-Dark.png "UpDown (Dark)")
