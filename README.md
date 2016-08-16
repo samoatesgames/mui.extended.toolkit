@@ -53,31 +53,20 @@ The following controls still need styles implementing for them:
  * AvalonDock
  * AutoSelectTextBox
  * BusyIndicator
- * ChildWindow
  * CollectionControl
- * CollectionControlDialog
  * DataGrid
  * DateTimePicker
- * Magnifier
  * MaskedTextBox
- * MessageBox
  * MultiLineTextEditor
- * PieChart
  * PrimitiveTypeCollEditor
  * PropertyGrid
  * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
- * SwitchPanel
- * TimelinePanel
  * TimePicker
  * ValueRangeTextBox
  * WatermarkTextBox
  * WatermarkComboBox
- * WindowContainer
- * WindowControl
- * Wizard
- * Zoombox
  
 ## Screenshots
 
