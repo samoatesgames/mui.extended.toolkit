@@ -10,11 +10,13 @@
         <ResourceDictionary Source="Controls/CheckComboBox.xaml" />
         <ResourceDictionary Source="Controls/ColorCanvas.xaml" />
         <ResourceDictionary Source="Controls/ColorPicker.xaml" />
+        <ResourceDictionary Source="Controls/DateTimePicker.xaml" />
         <ResourceDictionary Source="Controls/DateTimeUpDown.xaml" />
         <ResourceDictionary Source="Controls/DropDownButton.xaml" />
         <ResourceDictionary Source="Controls/NumericUpDown.xaml" />
         <ResourceDictionary Source="Controls/SelectorItem.xaml" />
         <ResourceDictionary Source="Controls/SplitButton.xaml" />
+        <ResourceDictionary Source="Controls/TimePicker.xaml" />
         <ResourceDictionary Source="Controls/TimeSpanUpDown.xaml" />
         <ResourceDictionary Source="Controls/WatermarkComboBox.xaml" />
         <ResourceDictionary Source="Controls/WatermarkTextBox.xaml" />

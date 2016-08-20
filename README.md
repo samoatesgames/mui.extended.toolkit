@@ -46,7 +46,9 @@ The following controls have had style resources fully created for them:
  * ButtonSpinner
  * Calculator
  * ChromeButton
+ * DateTimePicker
  * NumericUpDown
+ * TimePicker
 
 ### TODO
 
@@ -57,7 +59,6 @@ The following controls still need styles implementing for them:
  * BusyIndicator
  * CollectionControl
  * DataGrid
- * DateTimePicker
  * MaskedTextBox
  * MultiLineTextEditor
  * PrimitiveTypeCollEditor
@@ -65,7 +66,6 @@ The following controls still need styles implementing for them:
  * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
- * TimePicker
  * ValueRangeTextBox
  
 ## Screenshots

@@ -31,6 +31,10 @@
                 <ComboBoxItem Content="Example C" />
             </xctk:WatermarkComboBox>
 
+            <xctk:DateTimePicker Margin="2" />
+
+            <xctk:TimePicker Margin="2" />
+
         </StackPanel>
     </ScrollViewer>
 </Page>
