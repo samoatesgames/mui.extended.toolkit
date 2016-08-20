@@ -22,7 +22,9 @@
                     <TextBlock Padding="4">Split button example content...</TextBlock>
                 </xctk:SplitButton.DropDownContent>
             </xctk:SplitButton>
-        
+
+            <xctk:AutoSelectTextBox Margin="2" />
+
             <xctk:WatermarkTextBox Watermark="Watermark TextBox Example..." Margin="2" />
         
             <xctk:WatermarkComboBox Watermark="Watermark ComboBox Example..." Margin="2" >

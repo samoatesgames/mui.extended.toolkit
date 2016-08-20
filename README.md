@@ -43,6 +43,7 @@ The following controls have had style resources fully created for them:
  
 ### Misc Controls
 
+ * AutoSelectTextBox
  * ButtonSpinner
  * Calculator
  * ChromeButton
@@ -55,8 +56,6 @@ The following controls have had style resources fully created for them:
 The following controls still need styles implementing for them:
 
  * AvalonDock
- * AutoSelectTextBox
- * BusyIndicator
  * CollectionControl
  * DataGrid
  * MaskedTextBox

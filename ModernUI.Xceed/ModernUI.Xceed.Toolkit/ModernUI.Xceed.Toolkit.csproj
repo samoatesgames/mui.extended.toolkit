@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Assets\Controls\AutoSelectTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Assets\Controls\ButtonChrome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

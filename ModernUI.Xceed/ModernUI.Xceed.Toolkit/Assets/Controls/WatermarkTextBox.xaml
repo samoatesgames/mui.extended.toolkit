@@ -62,7 +62,7 @@
                             <Setter Property="Foreground" Value="{DynamicResource InputTextHover}" />
                         </Trigger>
                         <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource InputBorderHover}" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource Accent}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Foreground" Value="{DynamicResource InputTextDisabled}" />
