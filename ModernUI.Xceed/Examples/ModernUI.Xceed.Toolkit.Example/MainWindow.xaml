@@ -15,7 +15,7 @@
         <mui:LinkGroup DisplayName="Controls" >
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="UpDown Controls" Source="Pages/UpDownControls.xaml" />
-                <mui:Link DisplayName="Button Controls" Source="Pages/ButtonControls.xaml" />
+                <mui:Link DisplayName="Standard Controls" Source="Pages/ButtonControls.xaml" />
                 <mui:Link DisplayName="CheckList Controls" Source="Pages/CheckListControls.xaml" />
                 <mui:Link DisplayName="Calculator Control" Source="Pages/CalculatorControl.xaml" />
                 <mui:Link DisplayName="Color Controls" Source="Pages/ColorControls.xaml" />

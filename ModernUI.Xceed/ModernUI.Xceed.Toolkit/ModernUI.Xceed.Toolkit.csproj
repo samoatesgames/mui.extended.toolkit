@@ -107,6 +107,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Assets\Controls\WatermarkComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Controls\WatermarkTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Assets\ModernUI.Xceed.Toolkit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

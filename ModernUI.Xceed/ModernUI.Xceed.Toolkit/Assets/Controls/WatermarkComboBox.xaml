@@ -1,0 +1,283 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
+
+    <DataTemplate x:Key="DefaultWatermarkTemplate">
+        <ContentControl Content="{Binding}" Foreground="{DynamicResource InputTextDisabled}" Focusable="False" />
+    </DataTemplate>
+
+    <ControlTemplate x:Key="WatermarkComboBoxTemplate" TargetType="{x:Type xctk:WatermarkComboBox}">
+        <Grid x:Name="templateRoot"
+            SnapsToDevicePixels="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0" />
+            </Grid.ColumnDefinitions>
+            <Popup x:Name="PART_Popup" 
+                AllowsTransparency="True"
+                Grid.ColumnSpan="2"
+                IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                Margin="1"
+                PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}"
+                Placement="Bottom">
+                <Grid x:Name="DropDown"
+                  MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                  MinWidth="{TemplateBinding ActualWidth}"
+                  SnapsToDevicePixels="True">
+                    <Border x:Name="DropDownBorder"
+                       BorderBrush="{DynamicResource WindowBorderActive}"
+                       BorderThickness="1"
+                       Background="{DynamicResource PopupBackground}">
+                        <ScrollViewer x:Name="DropDownScrollViewer">
+                            <Grid x:Name="grid">
+                                <Canvas x:Name="canvas"
+                                HorizontalAlignment="Left"
+                                Height="0"
+                                VerticalAlignment="Top"
+                                Width="0">
+                                    <Rectangle x:Name="OpaqueRect"
+                                      Fill="{Binding Background, ElementName=DropDownBorder}"
+                                      Height="{Binding ActualHeight, ElementName=DropDownBorder}"
+                                      Width="{Binding ActualWidth, ElementName=DropDownBorder}" />
+                                </Canvas>
+                                <ItemsPresenter x:Name="ItemsPresenter"
+                                        KeyboardNavigation.DirectionalNavigation="Contained"
+                                        SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                            </Grid>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+            </Popup>
+            <ToggleButton x:Name="toggleButton"
+                       BorderBrush="{TemplateBinding BorderBrush}"
+                       BorderThickness="{TemplateBinding BorderThickness}"
+                       Background="{TemplateBinding Background}"
+                       Grid.ColumnSpan="2"
+                       IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+                <ToggleButton.Style>
+                    <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+                        <Setter Property="OverridesDefaultStyle" Value="True" />
+                        <Setter Property="IsTabStop" Value="False" />
+                        <Setter Property="Focusable" Value="False" />
+                        <Setter Property="ClickMode" Value="Press" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                    <Border x:Name="templateRoot"
+                                        Background="{DynamicResource InputBackground}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        SnapsToDevicePixels="True">
+                                        <Border x:Name="splitBorder" 
+                                            BorderBrush="Transparent"
+                                            BorderThickness="1"
+                                            HorizontalAlignment="Right"
+                                            Margin="0"
+                                            SnapsToDevicePixels="True"
+                                            Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}">
+                                            <Path x:Name="Arrow" Data="F1M0,0L2.667,2.66665 5.3334,0 5.3334,-1.78168 2.6667,0.88501 0,-1.78168 0,0z" Fill="{DynamicResource ItemText}"
+                                                HorizontalAlignment="Center" Margin="0"
+                                                VerticalAlignment="Center" />
+                                        </Border>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true" />
+                                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="false" />
+                                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="false" />
+                                                <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="true" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="Transparent" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="Transparent" />
+                                        </MultiDataTrigger>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource InputTextHover}" />
+                                        </Trigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="Fill" TargetName="Arrow" Value="Black" />
+                                        </Trigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="true" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="true" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Fill" TargetName="Arrow" Value="#FFBFBFBF" />
+                                        </Trigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false" />
+                                                <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true" />
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource InputBorderHover}" />
+                                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource InputBackgroundHover}" />
+                                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{DynamicResource InputBorderHover}" />
+                                        </MultiDataTrigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+            <ContentPresenter x:Name="contentPresenter"
+                           ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                           Content="{TemplateBinding SelectionBoxItem}"
+                           ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"
+                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                           IsHitTestVisible="False"
+                           Margin="{TemplateBinding Padding}"
+                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            <Border x:Name="Border"
+                 Background="{TemplateBinding Background}"
+                 Margin="{TemplateBinding BorderThickness}"
+                 Visibility="Collapsed">
+                <TextBox x:Name="PART_EditableTextBox"
+                     HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                     IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+                     Margin="{TemplateBinding Padding}"
+                     VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
+                    <TextBox.Style>
+                        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+                            <Setter Property="OverridesDefaultStyle" Value="True" />
+                            <Setter Property="AllowDrop" Value="True" />
+                            <Setter Property="MinWidth" Value="0" />
+                            <Setter Property="MinHeight" Value="0" />
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                            <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type TextBox}">
+                                        <ScrollViewer x:Name="PART_ContentHost"
+                                            Background="Transparent"
+                                            Focusable="False"
+                                            HorizontalScrollBarVisibility="Hidden"
+                                            VerticalScrollBarVisibility="Hidden" />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+            </Border>
+            <ContentPresenter x:Name="PART_WatermarkHost"
+                           Content="{TemplateBinding Watermark}"
+                           ContentTemplate="{TemplateBinding WatermarkTemplate}"
+                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                           IsHitTestVisible="False"
+                           Margin="{TemplateBinding Padding}"
+                           Visibility="Collapsed" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="HasItems" Value="False">
+                <Setter Property="Height" TargetName="DropDownBorder" Value="95" />
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsGrouping" Value="True" />
+                </MultiTrigger.Conditions>
+                <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+            </MultiTrigger>
+            <Trigger Property="CanContentScroll" SourceName="DropDownScrollViewer" Value="False">
+                <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=DropDownScrollViewer}" />
+                <Setter Property="Canvas.Left" TargetName="OpaqueRect" Value="{Binding HorizontalOffset, ElementName=DropDownScrollViewer}" />
+            </Trigger>
+            <Trigger Property="IsEditable" Value="True">
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="Padding" Value="2" />
+                <Setter Property="Visibility" Value="Visible" TargetName="Border" />
+                <Setter Property="Visibility" Value="Collapsed" TargetName="contentPresenter" />
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsKeyboardFocusWithin" Value="False" />
+                    <Condition Property="Text" Value="" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Visibility" TargetName="PART_WatermarkHost" Value="Visible" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="WatermarkComboBox" TargetType="{x:Type xctk:WatermarkComboBox}">
+        <Setter Property="FocusVisualStyle">
+            <Setter.Value>
+                <Style>
+                    <Setter Property="Control.Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Rectangle Margin="2"
+                                   SnapsToDevicePixels="True"
+                                   Stroke="{DynamicResource InputTextHover}"
+                                   StrokeThickness="1"
+                                   StrokeDashArray="1 2" />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Background" Value="{DynamicResource InputBackground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorder}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputText}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="Padding" Value="6,3,5,3" />
+        <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
+        <Setter Property="WatermarkTemplate" Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="Template" Value="{StaticResource WatermarkComboBoxTemplate}" />
+    </Style>
+
+    <Style TargetType="{x:Type xctk:WatermarkComboBox}" BasedOn="{StaticResource WatermarkComboBox}" />
+
+</ResourceDictionary>

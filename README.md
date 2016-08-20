@@ -24,11 +24,13 @@ The following controls have had style resources fully created for them:
  * SingleUpDown
  * TimeSpanUpDown
  
-### Button Controls
+### Standard Controls
 
  * DropDownButton
  * SplitButton
-
+ * WatermarkTextBox
+ * WatermarkComboBox
+ 
 ### Color Controls
 
  * ColorCanvas
@@ -65,8 +67,6 @@ The following controls still need styles implementing for them:
  * RichTextBoxFormatBar
  * TimePicker
  * ValueRangeTextBox
- * WatermarkTextBox
- * WatermarkComboBox
  
 ## Screenshots
 
