@@ -99,6 +99,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PropertyGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\UpDownControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +126,9 @@
     </Compile>
     <Compile Include="Pages\License.xaml.cs">
       <DependentUpon>License.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PropertyGrid.xaml.cs">
+      <DependentUpon>PropertyGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\UpDownControls.xaml.cs">
       <DependentUpon>UpDownControls.xaml</DependentUpon>
