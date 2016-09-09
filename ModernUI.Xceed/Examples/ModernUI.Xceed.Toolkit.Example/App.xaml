@@ -6,8 +6,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
-                <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml"/>
-                <ResourceDictionary Source="/ModernUI.Xceed.Toolkit;component/Assets/ModernUI.Xceed.Toolkit.xaml"/>
+                <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml" />
+                <ResourceDictionary Source="/ModernUI.Xceed.Toolkit;component/Assets/ModernUI.Xceed.Toolkit.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <Color x:Key="AccentColor">#FF2C8742</Color>
         </ResourceDictionary>

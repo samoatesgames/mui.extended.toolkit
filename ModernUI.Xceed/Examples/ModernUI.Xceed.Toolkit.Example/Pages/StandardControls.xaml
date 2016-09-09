@@ -1,22 +1,16 @@
-﻿<Page x:Class="ModernUI.Xceed.Toolkit.Example.Pages.ButtonControls"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="ButtonControls">
-
+﻿<UserControl x:Class="ModernUI.Xceed.Toolkit.Example.Pages.StandardControls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
     <ScrollViewer>
         <StackPanel>
-            
+
             <xctk:DropDownButton Content="Drop Down Button" Margin="2">
                 <xctk:DropDownButton.DropDownContent>
                     <TextBlock Padding="4">Drop down button example content...</TextBlock>
                 </xctk:DropDownButton.DropDownContent>
             </xctk:DropDownButton>
-            
+
             <xctk:SplitButton Content="Split Button" Margin="2">
                 <xctk:SplitButton.DropDownContent>
                     <TextBlock Padding="4">Split button example content...</TextBlock>
@@ -26,8 +20,8 @@
             <xctk:AutoSelectTextBox Margin="2" />
 
             <xctk:WatermarkTextBox Watermark="Watermark TextBox Example..." Margin="2" />
-        
-            <xctk:WatermarkComboBox Watermark="Watermark ComboBox Example..." Margin="2" >
+
+            <xctk:WatermarkComboBox Watermark="Watermark ComboBox Example..." Margin="2">
                 <ComboBoxItem Content="Example A" />
                 <ComboBoxItem Content="Example B" />
                 <ComboBoxItem Content="Example C" />
@@ -39,4 +33,4 @@
 
         </StackPanel>
     </ScrollViewer>
-</Page>
+</UserControl>

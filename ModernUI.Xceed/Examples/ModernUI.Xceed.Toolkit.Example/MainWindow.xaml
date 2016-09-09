@@ -1,28 +1,27 @@
 ﻿<mui:ModernWindow x:Class="ModernUI.Xceed.Toolkit.Example.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-        ContentSource="Pages/About.xaml"
-        Title="ModernUI.Xceed.Toolkit Example" Height="480" Width="800">
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  ContentSource="Pages/About.xaml"
+                  WindowStartupLocation="CenterScreen"
+                  Title="ModernUI.Xceed.Toolkit Example" Height="480" Width="600">
+
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="License" Source="Pages/License.xaml" />
+        <mui:Link DisplayName="Help" Source="https://github.com/samoatesgames/mui.extended.toolkit" />
+    </mui:ModernWindow.TitleLinks>
 
     <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="ModernUI.Xceed.Toolkit" >
+        <mui:LinkGroup DisplayName="ModernUI.Xceed.Toolkit">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="About" Source="Pages/About.xaml" />
-                <mui:Link DisplayName="License" Source="Pages/License.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
-        <mui:LinkGroup DisplayName="Controls" >
+        <mui:LinkGroup DisplayName="Controls">
             <mui:LinkGroup.Links>
-                <mui:Link DisplayName="UpDown Controls" Source="Pages/UpDownControls.xaml" />
-                <mui:Link DisplayName="Standard Controls" Source="Pages/ButtonControls.xaml" />
-                <mui:Link DisplayName="CheckList Controls" Source="Pages/CheckListControls.xaml" />
-                <mui:Link DisplayName="Calculator Control" Source="Pages/CalculatorControl.xaml" />
-                <mui:Link DisplayName="Color Controls" Source="Pages/ColorControls.xaml" />
-                <mui:Link DisplayName="Property Grid" Source="Pages/PropertyGrid.xaml" />
+                <mui:Link Source="Pages/ControlsRoot.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
     </mui:ModernWindow.MenuLinkGroups>
 
 </mui:ModernWindow>
-

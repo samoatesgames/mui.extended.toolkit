@@ -1,0 +1,18 @@
+﻿<Page x:Class="ModernUI.Xceed.Toolkit.Example.Pages.ControlsRoot"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+      Title="Controls">
+
+    <mui:ModernTab SelectedSource="Pages\StandardControls.xaml" Layout="List">
+        <mui:ModernTab.Links>
+            <mui:Link DisplayName="Standard Controls" Source="Pages\StandardControls.xaml" />
+            <mui:Link DisplayName="UpDown Controls" Source="Pages\UpDownControls.xaml" />
+            <mui:Link DisplayName="CheckList Controls" Source="Pages\CheckListControls.xaml" />
+            <mui:Link DisplayName="Calculator Control" Source="Pages\CalculatorControl.xaml" />
+            <mui:Link DisplayName="Color Controls" Source="Pages\ColorControls.xaml" />
+            <mui:Link DisplayName="Property Grid" Source="Pages\PropertyGrid.xaml" />
+        </mui:ModernTab.Links>
+    </mui:ModernTab>
+
+</Page>

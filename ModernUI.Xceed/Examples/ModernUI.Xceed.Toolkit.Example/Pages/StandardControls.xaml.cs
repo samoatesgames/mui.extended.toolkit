@@ -1,11 +1,11 @@
 ﻿namespace ModernUI.Xceed.Toolkit.Example.Pages
 {
     /// <summary>
-    /// Interaction logic for CheckListControls.xaml
+    /// Interaction logic for StandardControls.xaml
     /// </summary>
-    public partial class CheckListControls
+    public partial class StandardControls
     {
-        public CheckListControls()
+        public StandardControls()
         {
             InitializeComponent();
         }
