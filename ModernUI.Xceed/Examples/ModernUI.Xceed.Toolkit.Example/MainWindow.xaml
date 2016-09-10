@@ -4,7 +4,11 @@
                   xmlns:mui="http://firstfloorsoftware.com/ModernUI"
                   ContentSource="Pages/About.xaml"
                   WindowStartupLocation="CenterScreen"
-                  Title="ModernUI.Xceed.Toolkit Example" Height="480" Width="600">
+                  Title="ModernUI.Xceed.Toolkit Example" 
+                  IsTitleVisible="True"
+                  Icon="Resources/Icon.ico"
+                  LogoData="F1 M 20,24.0001L 55.9999,24.0001C 57.6568,24.0001 58.9999,25.3432 58.9999,27.0001L 58.9999,49.0001C 58.9999,50.6569 57.6567,52.0001 55.9999,52.0001L 20,52.0001C 18.3431,52.0001 17,50.6569 17,49.0001L 17,27.0001C 17,25.3433 18.3431,24.0001 20,24.0001 Z M 22,31L 22,33L 51,33L 51,31L 22,31 Z M 22,37L 22,39L 44,39L 44,37L 22,37 Z M 22,43L 22,45L 51,45L 51,43L 22,43 Z"
+                  Height="480" Width="600">
 
     <mui:ModernWindow.TitleLinks>
         <mui:Link DisplayName="License" Source="Pages/License.xaml" />
@@ -12,9 +16,9 @@
     </mui:ModernWindow.TitleLinks>
 
     <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="ModernUI.Xceed.Toolkit">
+        <mui:LinkGroup DisplayName="About">
             <mui:LinkGroup.Links>
-                <mui:Link DisplayName="About" Source="Pages/About.xaml" />
+                <mui:Link Source="Pages/About.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Controls">

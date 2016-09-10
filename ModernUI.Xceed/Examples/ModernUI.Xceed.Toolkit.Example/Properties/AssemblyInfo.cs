@@ -9,9 +9,9 @@ using System.Windows;
 [assembly: AssemblyTitle("ModernUI.Xceed.Toolkit.Example")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Sam Oates Games")]
 [assembly: AssemblyProduct("ModernUI.Xceed.Toolkit.Example")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright © Sam Oates 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
