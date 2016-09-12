@@ -403,85 +403,60 @@
     </Setter>
   </Style>
 
-  <Style x:Key="ClearFilterButtonStyle"
-        TargetType="{x:Type Button}">
-    <Setter Property="Background"
-          Value="Transparent" />
-    <Setter Property="BorderBrush"
-          Value="Transparent" />
-    <Setter Property="BorderThickness"
-          Value="1" />
-    <Setter Property="Height"
-          Value="22" />
-    <Setter Property="HorizontalContentAlignment"
-          Value="Center" />
-    <Setter Property="ToolTipService.InitialShowDelay"
-          Value="900" />
-    <Setter Property="ToolTipService.ShowDuration"
-          Value="20000" />
-    <Setter Property="ToolTipService.BetweenShowDelay"
-          Value="0" />
+  <Style x:Key="ClearFilterButtonStyle" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="ToolTipService.InitialShowDelay" Value="900" />
+    <Setter Property="ToolTipService.ShowDuration" Value="20000" />
+    <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
     <Setter Property="Template">
       <Setter.Value>
         <ControlTemplate TargetType="{x:Type Button}">
-          <Grid SnapsToDevicePixels="True">
+          <Grid SnapsToDevicePixels="True" HorizontalAlignment="Center">
             <Border x:Name="OuterBorder"
               BorderBrush="{TemplateBinding BorderBrush}"
               BorderThickness="{TemplateBinding BorderThickness}"
               Background="{TemplateBinding Background}"
+              HorizontalAlignment="Center"
               CornerRadius="0" />
             <Border x:Name="MiddleBorder"
               BorderBrush="Transparent"
               BorderThickness="{TemplateBinding BorderThickness}"
+              HorizontalAlignment="Center"
               Background="Transparent"
               CornerRadius="0">
               <Border x:Name="InnerBorder"
                BorderBrush="Transparent"
                BorderThickness="{TemplateBinding BorderThickness}"
+               HorizontalAlignment="Center"
                Background="Transparent"
                CornerRadius="0"
-               Padding="{TemplateBinding Padding}">
-                <StackPanel x:Name="StackPanel"
-                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
-                  <ContentPresenter x:Name="Content"
-                           Content="{TemplateBinding Content}"
-                           Margin="1"
-                           RenderOptions.BitmapScalingMode="NearestNeighbor"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+               Padding="2">
+                <StackPanel x:Name="StackPanel" HorizontalAlignment="Center">
+                  <Path x:Name="clearPath" Fill="{DynamicResource ItemTextDisabled}" Stretch="Uniform" Height="16"
+                        HorizontalAlignment="Center" Margin="0,2,0,0"
+                        Data="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z"
+                        />
                 </StackPanel>
               </Border>
             </Border>
           </Grid>
           <ControlTemplate.Triggers>
-            <Trigger Property="IsMouseOver"
-               Value="True">
-              <Setter Property="Background"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBackgroundHover}" />
-              <Setter Property="BorderBrush"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBorderHover}" />
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="clearPath" Property="Fill" Value="{DynamicResource ItemTextHover}" />
             </Trigger>
 
-            <Trigger Property="IsEnabled"
-               Value="False">
-              <Setter Property="Opacity"
-               TargetName="Content"
-               Value="0.5" />
-              <Setter Property="TextElement.Foreground"
-               TargetName="OuterBorder"
-               Value="#FF9E9E9E" />
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Visibility" Value="Collapsed" />
             </Trigger>
 
-            <Trigger Property="IsPressed"
-               Value="True">
-              <Setter Property="Background"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBackgroundPressed}" />
-              <Setter Property="BorderBrush"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBorderPressed}" />
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="clearPath" Property="Fill" Value="{DynamicResource ItemText}" />
+              <Setter Property="Background" TargetName="OuterBorder" Value="{DynamicResource ButtonBackgroundPressed}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource ButtonBorderPressed}" />
             </Trigger>
           </ControlTemplate.Triggers>
         </ControlTemplate>
@@ -1008,6 +983,7 @@
                     </Grid.ColumnDefinitions>
                     <xctk:WatermarkTextBox x:Name="_txtFilter"
                                   Background="Transparent"
+                                  BorderThickness="0"
                                   Text="{Binding Filter, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}"
                                   Watermark="{TemplateBinding FilterWatermark}">
                     </xctk:WatermarkTextBox>
@@ -1016,9 +992,6 @@
                   Command="xctk:PropertyGridCommands.ClearFilter"
                   Style="{StaticResource ClearFilterButtonStyle}"
                   HorizontalAlignment="Left">
-                      <Image Source="./../Images/ClearFilter16.png"
-                  Width="16"
-                  Height="16" />
                     </Button>
                   </Grid>
                 </Border>
