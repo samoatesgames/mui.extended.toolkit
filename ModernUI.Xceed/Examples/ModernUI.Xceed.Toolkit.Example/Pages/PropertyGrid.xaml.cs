@@ -25,21 +25,27 @@ namespace ModernUI.Xceed.Toolkit.Example.Pages
     public class UserViewModel
     {
         [Category("User")]
+        [Description("The first name of the user.")]
         public string FirstName { get; set; }
 
         [Category("User")]
+        [Description("The last name of the user.")]
         public string LastName { get; set; }
 
         [Category("User")]
+        [Description("The sex of the user (optional).")]
         public Sex Sex { get; set; }
 
         [Category("Job")]
+        [Description("The users current role within the company.")]
         public Role Role { get; set; }
 
         [Category("Job")]
+        [Description("The level at which the user opperates.")]
         public Level Level { get; set; }
 
         [Category("Job")]
+        [Description("The salary of the user, in USD ($).")]
         public int Salary { get; set; }
     }
 
