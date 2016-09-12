@@ -61,7 +61,7 @@ The following controls still need styles implementing for them:
  * MaskedTextBox
  * MultiLineTextEditor
  * PrimitiveTypeCollEditor
- * PropertyGrid
+ * PropertyGrid - In Progress
  * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
@@ -69,12 +69,4 @@ The following controls still need styles implementing for them:
  
 ## Screenshots
 
-![Buttons (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Buttons-Dark.png "Buttons (Dark)")
-
-![Caculator (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Caculator-Dark.png "Caculator (Dark)")
-
-![Checklist (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Checklist-Dark.png "Checklist (Dark)")
-
-![Colors (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/Colors-Back.png "Colors (Dark)")
-
-![UpDown (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/UpDown-Dark.png "UpDown (Dark)")
+![ModernUI.Xceed.Toolkit (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit.Dark.gif "ModernUI.Xceed.Toolkit (Dark)")
