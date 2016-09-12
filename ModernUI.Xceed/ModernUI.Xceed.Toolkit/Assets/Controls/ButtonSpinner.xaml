@@ -79,11 +79,13 @@
                                 <RepeatButton x:Name="PART_IncreaseButton"
                                    Style="{StaticResource {x:Type RepeatButton}}"
                                    Padding="0"
+                                   BorderThickness="0"
                                    IsTabStop="{TemplateBinding IsTabStop}" ContentTemplate="{StaticResource IncreaseGlyphNormalKey}" />
 
                                 <RepeatButton x:Name="PART_DecreaseButton"
                                    Grid.Row="1"
                                    Padding="0"
+                                   BorderThickness="0"
                                    Style="{StaticResource {x:Type RepeatButton}}"
                                    IsTabStop="{TemplateBinding IsTabStop}" ContentTemplate="{StaticResource DecreaseGlyphNormalKey}" />
 

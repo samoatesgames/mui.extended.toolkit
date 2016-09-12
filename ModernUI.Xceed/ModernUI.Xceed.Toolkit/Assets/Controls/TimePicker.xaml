@@ -113,7 +113,7 @@
                                        AllowSpin="{TemplateBinding AllowSpin}"
                                        ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
                             <xctk:WatermarkTextBox x:Name="PART_TextBox"
-                                             BorderThickness="{TemplateBinding BorderThickness}"
+                                             BorderThickness="0"
                                              Background="Transparent"
                                              FontFamily="{TemplateBinding FontFamily}"
                                              FontSize="{TemplateBinding FontSize}"
