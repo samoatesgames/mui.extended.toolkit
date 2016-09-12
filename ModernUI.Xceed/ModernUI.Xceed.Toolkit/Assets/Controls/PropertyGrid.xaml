@@ -305,26 +305,16 @@
 
 
 
-  <Style x:Key="OptionsToggleButtonStyle"
-        TargetType="{x:Type RadioButton}">
-    <Setter Property="Background"
-          Value="Transparent" />
-    <Setter Property="BorderBrush"
-          Value="Transparent" />
-    <Setter Property="BorderThickness"
-          Value="1" />
-    <Setter Property="FocusVisualStyle"
-          Value="{x:Null}" />
-    <Setter Property="Height"
-          Value="22" />
-    <Setter Property="HorizontalContentAlignment"
-          Value="Center" />
-    <Setter Property="ToolTipService.InitialShowDelay"
-          Value="900" />
-    <Setter Property="ToolTipService.ShowDuration"
-          Value="20000" />
-    <Setter Property="ToolTipService.BetweenShowDelay"
-          Value="0" />
+  <Style x:Key="OptionsToggleButtonStyle" TargetType="{x:Type RadioButton}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="ToolTipService.InitialShowDelay" Value="900" />
+    <Setter Property="ToolTipService.ShowDuration" Value="20000" />
+    <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
     <Setter Property="Template">
       <Setter.Value>
         <ControlTemplate TargetType="{x:Type RadioButton}">
@@ -358,44 +348,24 @@
             </Border>
           </Grid>
           <ControlTemplate.Triggers>
-            <Trigger Property="IsMouseOver"
-               Value="True">
-              <Setter Property="Background"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBackgroundHover}" />
-              <Setter Property="BorderBrush"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBorderHover}" />
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{DynamicResource ButtonBackgroundHover}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource ButtonBorderHover}" />
             </Trigger>
 
-            <Trigger Property="IsEnabled"
-               Value="False">
-              <Setter Property="Opacity"
-               TargetName="Content"
-               Value="0.5" />
-              <Setter Property="TextElement.Foreground"
-               TargetName="OuterBorder"
-               Value="#FF9E9E9E" />
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Opacity" TargetName="Content" Value="0.5" />
+              <Setter Property="TextElement.Foreground" TargetName="OuterBorder" Value="{DynamicResource ItemTextDisabled}" />
             </Trigger>
 
-            <Trigger Property="IsChecked"
-               Value="True">
-              <Setter Property="Background"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBackgroundPressed}" />
-              <Setter Property="BorderBrush"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBorderPressed}" />
+            <Trigger Property="IsChecked" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{DynamicResource ButtonBackground}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource ButtonBorderPressed}" />
             </Trigger>
 
-            <Trigger Property="IsPressed"
-               Value="True">
-              <Setter Property="Background"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBackgroundPressed}" />
-              <Setter Property="BorderBrush"
-               TargetName="OuterBorder"
-               Value="{DynamicResource ButtonBorderPressed}" />
+            <Trigger Property="IsPressed" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{DynamicResource ButtonBackgroundPressed}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource ButtonBorderPressed}" />
             </Trigger>
           </ControlTemplate.Triggers>
         </ControlTemplate>
@@ -525,7 +495,7 @@
             TargetName="Up_Arrow" />
         <Setter Property="OpacityMask"
             TargetName="Down_Arrow"
-            Value="#FF000000" />
+            Value="{DynamicResource ItemText}" />
       </Trigger>
     </ControlTemplate.Triggers>
   </ControlTemplate>
@@ -954,17 +924,21 @@
                        VerticalAlignment="Center"
                        Style="{StaticResource OptionsToggleButtonStyle}"
                        ToolTip="Categorized">
-                      <Image Source="./../Images/Categorize16.png"
-                  Width="16"
-                  Height="16" />
+                      <Path Width="16" Height="16"          
+                            Data="F1 M 19,20.5833L 57,20.5833L 57,26.9167L 19,26.9167L 19,20.5833 Z M 19,30.0833L 57,30.0833L 57,36.4167L 19,36.4167L 19,30.0833 Z M 19,39.5833L 57,39.5833L 57,45.9167L 19,45.9167L 19,39.5833 Z M 19,49.0833L 57,49.0833L 57,55.4167L 19,55.4167L 19,49.0833 Z"
+                            Fill="{DynamicResource ButtonText}"
+                            Stretch="Uniform"
+                            />
                     </RadioButton>
                     <RadioButton IsChecked="{Binding IsCategorized, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}, Mode=OneWay}"
                        VerticalAlignment="Center"
                        Style="{StaticResource OptionsToggleButtonStyle}"
                        ToolTip="Alphabetical">
-                      <Image Source="./../Images/SortAscending16.png"
-                  Width="16"
-                  Height="16" />
+                      <Path Width="16" Height="16"          
+                            Data="F1 M 62.25,34L 35.75,34L 49,47.25L 62.25,34 Z M 28.9079,36L 28.1281,32.7344L 22.8358,32.7344L 21.9927,36L 16.25,36L 22.25,18L 28.75,18L 34.75,36L 28.9079,36 Z M 25.5433,22.1221L 25.4206,22.1221L 23.7502,28.9384L 27.1385,28.9384L 25.5433,22.1221 Z M 25,54L 33,54L 33,58L 19.006,58L 19.006,54.2515L 27,44L 19,44L 19,40L 33,40L 33,44L 25,54 Z"
+                            Fill="{DynamicResource ButtonText}"
+                            Stretch="Uniform"
+                            />
                     </RadioButton>
                   </StackPanel>
                 </Grid>
@@ -974,7 +948,7 @@
                 Margin="4,4,0,4"
                 Background="{DynamicResource InputBackground}"
                 BorderBrush="{DynamicResource ItemBorder}"
-                BorderThickness="2"
+                BorderThickness="1"
                 Visibility="{Binding ShowSearchBox, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}">
                   <Grid>
                     <Grid.ColumnDefinitions>
@@ -1033,7 +1007,7 @@
 
               </Grid>
 
-              <GridSplitter Height="3"
+              <GridSplitter Height="1"
                      Grid.Row="3"
                      HorizontalAlignment="Stretch"
                      Visibility="{Binding ShowSummary, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}" />
