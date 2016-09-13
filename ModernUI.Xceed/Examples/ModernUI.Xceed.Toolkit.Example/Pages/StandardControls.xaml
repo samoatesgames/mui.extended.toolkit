@@ -31,6 +31,8 @@
 
             <xctk:TimePicker Margin="2" />
 
+            <xctk:MaskedTextBox Margin="2" Mask="+(00) 0000-000000" />
+          
         </StackPanel>
     </ScrollViewer>
 </UserControl>

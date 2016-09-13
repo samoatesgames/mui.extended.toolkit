@@ -27,6 +27,7 @@ The following controls have had style resources fully created for them:
 ### Standard Controls
 
  * DropDownButton
+ * MaskedTextBox
  * SplitButton
  * WatermarkTextBox
  * WatermarkComboBox
@@ -59,7 +60,6 @@ The following controls still need styles implementing for them:
  * AvalonDock
  * CollectionControl
  * DataGrid
- * MaskedTextBox
  * MultiLineTextEditor
  * PrimitiveTypeCollEditor
  * RangeSlider
