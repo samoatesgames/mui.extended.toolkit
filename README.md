@@ -49,6 +49,7 @@ The following controls have had style resources fully created for them:
  * ChromeButton
  * DateTimePicker
  * NumericUpDown
+ * PropertyGrid
  * TimePicker
 
 ### TODO
@@ -61,7 +62,6 @@ The following controls still need styles implementing for them:
  * MaskedTextBox
  * MultiLineTextEditor
  * PrimitiveTypeCollEditor
- * PropertyGrid - In Progress
  * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
