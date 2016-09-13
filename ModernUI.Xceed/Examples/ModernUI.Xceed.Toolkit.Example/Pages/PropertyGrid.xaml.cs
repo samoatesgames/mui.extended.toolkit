@@ -128,14 +128,6 @@ namespace ModernUI.Xceed.Toolkit.Example.Pages
         [Category("Job")]
         [Description("The salary of the user per year, in USD ($).")]
         public int Salary { get; set; }
-
-        [Category("Job")]
-        [Description("The required number of hours worked per week.")]
-        public float HoursPerWeek { get; set; }
-
-        [Category("Job")]
-        [Description("The hourly pay of the user per year, in USD ($).")]
-        public float HourlyPay { get; set; }
     }
 
     public enum Sex
