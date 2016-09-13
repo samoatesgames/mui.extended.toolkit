@@ -49,6 +49,7 @@ The following controls have had style resources fully created for them:
  * Calculator
  * ChromeButton
  * DateTimePicker
+ * MultiLineTextEditor
  * NumericUpDown
  * PropertyGrid
  * TimePicker
@@ -60,7 +61,6 @@ The following controls still need styles implementing for them:
  * AvalonDock
  * CollectionControl
  * DataGrid
- * MultiLineTextEditor
  * PrimitiveTypeCollEditor
  * RangeSlider
  * RichTextBox

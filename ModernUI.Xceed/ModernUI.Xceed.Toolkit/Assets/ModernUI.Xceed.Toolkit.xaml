@@ -16,6 +16,7 @@
         <ResourceDictionary Source="Controls/DropDownButton.xaml" />
         <ResourceDictionary Source="Controls/NumericUpDown.xaml" />
         <ResourceDictionary Source="Controls/MaskedTextBox.xaml" />
+        <ResourceDictionary Source="Controls/MultiLineTextEditor.xaml" />
         <ResourceDictionary Source="Controls/PropertyGrid.xaml" />
         <ResourceDictionary Source="Controls/SelectorItem.xaml" />
         <ResourceDictionary Source="Controls/SplitButton.xaml" />
