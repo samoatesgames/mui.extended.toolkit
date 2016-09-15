@@ -58,15 +58,18 @@ The following controls have had style resources fully created for them:
 
 The following controls still need styles implementing for them:
 
- * AvalonDock
  * CollectionControl
- * DataGrid
  * PrimitiveTypeCollEditor
  * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
  * ValueRangeTextBox
+
+The following controls will be implemented in separate libraries: 
  
+ * AvalonDock
+ * DataGrid
+  
 ## Screenshots
 
 ![ModernUI.Xceed.Toolkit (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit.Dark.gif "ModernUI.Xceed.Toolkit (Dark)")
