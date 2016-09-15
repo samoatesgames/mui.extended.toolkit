@@ -35,6 +35,8 @@
 
             <xctk:MultiLineTextEditor Margin="2" />
 
+            <xctk:RangeSlider Margin="2" Minimum="-100" Maximum="100" LowerValue="-90" HigherValue="90" />
+          
         </StackPanel>
     </ScrollViewer>
 </UserControl>

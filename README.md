@@ -26,9 +26,17 @@ The following controls have had style resources fully created for them:
  
 ### Standard Controls
 
+ * AutoSelectTextBox
+ * Calculator
  * DropDownButton
+ * DateTimePicker
  * MaskedTextBox
+ * MultiLineTextEditor
+ * NumericUpDown
+ * PropertyGrid
+ * RangeSlider
  * SplitButton
+ * TimePicker
  * WatermarkTextBox
  * WatermarkComboBox
  
@@ -44,15 +52,8 @@ The following controls have had style resources fully created for them:
  
 ### Misc Controls
 
- * AutoSelectTextBox
  * ButtonSpinner
- * Calculator
  * ChromeButton
- * DateTimePicker
- * MultiLineTextEditor
- * NumericUpDown
- * PropertyGrid
- * TimePicker
 
 ### TODO
 
@@ -60,7 +61,6 @@ The following controls still need styles implementing for them:
 
  * CollectionControl
  * PrimitiveTypeCollEditor
- * RangeSlider
  * RichTextBox
  * RichTextBoxFormatBar
  * ValueRangeTextBox

@@ -18,6 +18,7 @@
         <ResourceDictionary Source="Controls/MaskedTextBox.xaml" />
         <ResourceDictionary Source="Controls/MultiLineTextEditor.xaml" />
         <ResourceDictionary Source="Controls/PropertyGrid.xaml" />
+        <ResourceDictionary Source="Controls/RangeSlider.xaml" />
         <ResourceDictionary Source="Controls/SelectorItem.xaml" />
         <ResourceDictionary Source="Controls/SplitButton.xaml" />
         <ResourceDictionary Source="Controls/TimePicker.xaml" />
