@@ -117,6 +117,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\RichTextControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StandardControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,6 +157,9 @@
   <ItemGroup>
     <Compile Include="Pages\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RichTextControl.xaml.cs">
+      <DependentUpon>RichTextControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StandardControls.xaml.cs">
       <DependentUpon>StandardControls.xaml</DependentUpon>

@@ -1,0 +1,601 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
+
+  <xctk:ColorToSolidColorBrushConverter x:Key="ColorToSolidColorBrushConverter" />
+
+  <ControlTemplate x:Key="ThumbControlTemplate" TargetType="{x:Type Thumb}">
+    <Border Background="Transparent" Cursor="Hand" ToolTip="Click to Drag">
+      <StackPanel VerticalAlignment="Center" Width="75">
+        <Line SnapsToDevicePixels="True"
+              Stretch="Fill"
+              StrokeDashArray="1,2"
+              StrokeThickness="1"
+              X1="0"
+              X2="1"
+              Margin=".5" 
+              Stroke="{DynamicResource ItemText}" />
+        <Line SnapsToDevicePixels="True"
+              Stretch="Fill"
+              StrokeDashArray="1,2"
+              StrokeThickness="1"
+              X1="0"
+              X2="1"
+              Margin=".5"
+              Stroke="{DynamicResource ItemText}" />
+        <Line SnapsToDevicePixels="True"
+              Stretch="Fill"
+              StrokeDashArray="1,2"
+              StrokeThickness="1"
+              X1="0"
+              X2="1"
+              Margin=".5"
+              Stroke="{DynamicResource ItemText}" />
+      </StackPanel>
+    </Border>
+  </ControlTemplate>
+
+  <SolidColorBrush x:Key="MouseOverBorderBrush" Color="{DynamicResource AccentColor}" />
+  <SolidColorBrush x:Key="MouseOverBackgroundBrush" Color="{DynamicResource AccentColor}" />
+  <SolidColorBrush x:Key="CheckedBorderBrush" Color="{DynamicResource AccentColor}" />
+  <SolidColorBrush x:Key="CheckedBackgroundBrush" Color="{DynamicResource AccentColor}" />
+  <SolidColorBrush x:Key="PressedBorderBrush" Color="{DynamicResource AccentColor}" />
+  <SolidColorBrush x:Key="PressedBackgroundBrush" Color="{DynamicResource AccentColor}" />
+  
+  <Style x:Key="FormatBarToggleButtonStyle" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="Width" Value="22" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="ToolTipService.InitialShowDelay" Value="900" />
+    <Setter Property="ToolTipService.ShowDuration" Value="20000" />
+    <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Grid SnapsToDevicePixels="True">
+            <Border x:Name="OuterBorder"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="{TemplateBinding Background}" />
+            <Border x:Name="MiddleBorder"
+                    BorderBrush="Transparent"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="Transparent" >
+              <Border x:Name="InnerBorder"
+                      BorderBrush="Transparent"
+                      BorderThickness="{TemplateBinding BorderThickness}"
+                      Background="Transparent"
+                      Padding="0">
+                <StackPanel x:Name="StackPanel"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
+                  <ContentPresenter x:Name="Content"
+                                    Content="{TemplateBinding Content}"
+                                    Margin="1"
+                                    RenderOptions.BitmapScalingMode="NearestNeighbor"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                </StackPanel>
+              </Border>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{StaticResource MouseOverBackgroundBrush}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource Accent}" />
+              <Setter Property="BorderBrush" TargetName="InnerBorder" Value="#80FFFFFF" />
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Opacity" TargetName="Content" Value="0.5" />
+              <Setter Property="TextElement.Foreground" TargetName="OuterBorder" Value="#FF9E9E9E" />
+            </Trigger>
+
+            <Trigger Property="IsChecked" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{StaticResource CheckedBackgroundBrush}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource Accent}" />
+              <Setter Property="BorderBrush" TargetName="InnerBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFE7CBAD" Offset="0" />
+                    <GradientStop Color="#FFF7D7B5" Offset="0.1" />
+                    <GradientStop Color="#FFFFD38C" Offset="0.36" />
+                    <GradientStop Color="#FFFFC75A" Offset="0.36" />
+                    <GradientStop Color="#FFFFEFA5" Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+
+            <Trigger Property="IsPressed" Value="True">
+              <Setter Property="Background" TargetName="OuterBorder" Value="{StaticResource PressedBackgroundBrush}" />
+              <Setter Property="BorderBrush" TargetName="OuterBorder" Value="{DynamicResource Accent}" />
+              <Setter Property="BorderBrush" TargetName="InnerBorder" Value="Transparent" />
+            </Trigger>
+
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsChecked" Value="True" />
+                <Condition Property="IsMouseOver" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="MiddleBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#40FFFEFE" Offset="0" />
+                    <GradientStop Color="#40FFFEFE" Offset="0.39" />
+                    <GradientStop Color="#20FFCE68" Offset="0.39" />
+                    <GradientStop Color="#20FFCE68" Offset="0.69" />
+                    <GradientStop Color="#10FFFFFF" Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </MultiTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="FontColorButtonStyle" TargetType="{x:Type ToggleButton}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="Width" Value="28" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="ToolTipService.InitialShowDelay" Value="900" />
+    <Setter Property="ToolTipService.ShowDuration" Value="20000" />
+    <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Grid SnapsToDevicePixels="True">
+            <Border x:Name="OuterBorder"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="2" />
+            <Border x:Name="MiddleBorder"
+                    BorderBrush="Transparent"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="Transparent"
+                    CornerRadius="2">
+              <Border x:Name="InnerBorder"
+                      BorderBrush="Transparent"
+                      BorderThickness="{TemplateBinding BorderThickness}"
+                      Background="Transparent"
+                      CornerRadius="2"
+                      Padding="{TemplateBinding Padding}">
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition />
+                  </Grid.ColumnDefinitions>
+
+                  <Grid>
+                    <Path 
+                      Fill="{DynamicResource ItemText}"
+                      Width="10" Height="10" Stretch="Uniform"
+                      Data="F1 M 54.1869,53.8333L 46.2043,53.8333L 44.1143,47.3311L 32.1476,47.3311L 30.0794,53.8333L 22.1403,53.8333L 33.9618,21.3222L 42.6339,21.3222L 54.1869,53.8333 Z M 42.1622,40.8286L 38.7514,30.0523C 38.4853,29.2347 38.3015,28.2599 38.1999,27.1278L 38.0185,27.1278C 37.9604,28.0809 37.7693,29.0243 37.4452,29.958L 33.9691,40.8286L 42.1622,40.8286 Z"
+                    />
+                    <Rectangle
+                               Height="4"
+                               Margin="0,12,0,0"
+                               Fill="{Binding SelectedColor, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=xctk:ColorPicker}, Converter={StaticResource ColorToSolidColorBrushConverter}}" />
+                  </Grid>
+
+                  <Path Grid.Column="1"
+                        Width="7"
+                        Height="4"
+                        Data="M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z"
+                        Fill="{DynamicResource ItemText}" />
+                </Grid>
+              </Border>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource MouseOverBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource MouseOverBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder"
+                      Value="#80FFFFFF" />
+            </Trigger>
+
+            <Trigger Property="IsEnabled"
+                     Value="False">
+              <Setter Property="TextElement.Foreground"
+                      TargetName="OuterBorder"
+                      Value="#FF9E9E9E" />
+            </Trigger>
+
+            <Trigger Property="IsChecked"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource CheckedBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource CheckedBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1"
+                                       StartPoint="0,0">
+                    <GradientStop Color="#FFE7CBAD"
+                                  Offset="0" />
+                    <GradientStop Color="#FFF7D7B5"
+                                  Offset="0.1" />
+                    <GradientStop Color="#FFFFD38C"
+                                  Offset="0.36" />
+                    <GradientStop Color="#FFFFC75A"
+                                  Offset="0.36" />
+                    <GradientStop Color="#FFFFEFA5"
+                                  Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+
+            <Trigger Property="IsPressed"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource PressedBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource PressedBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder"
+                      Value="Transparent" />
+            </Trigger>
+
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsChecked"
+                           Value="True" />
+                <Condition Property="IsMouseOver"
+                           Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background"
+                      TargetName="MiddleBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1"
+                                       StartPoint="0,0">
+                    <GradientStop Color="#40FFFEFE"
+                                  Offset="0" />
+                    <GradientStop Color="#40FFFEFE"
+                                  Offset="0.39" />
+                    <GradientStop Color="#20FFCE68"
+                                  Offset="0.39" />
+                    <GradientStop Color="#20FFCE68"
+                                  Offset="0.69" />
+                    <GradientStop Color="#10FFFFFF"
+                                  Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </MultiTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="FontBackgrounColorButtonStyle"
+         TargetType="{x:Type ToggleButton}">
+    <Setter Property="Background" Value="White" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="Width" Value="28" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="ToolTipService.InitialShowDelay" Value="900" />
+    <Setter Property="ToolTipService.ShowDuration" Value="20000" />
+    <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Grid SnapsToDevicePixels="True">
+            <Border x:Name="OuterBorder"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="2" />
+            <Border x:Name="MiddleBorder"
+                    BorderBrush="Transparent"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="Transparent"
+                    CornerRadius="2">
+              <Border x:Name="InnerBorder"
+                      BorderBrush="Transparent"
+                      BorderThickness="{TemplateBinding BorderThickness}"
+                      Background="Transparent"
+                      CornerRadius="2"
+                      Padding="{TemplateBinding Padding}">
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition />
+                  </Grid.ColumnDefinitions>
+
+                  <Grid>
+                    <Path 
+                      Fill="{DynamicResource ItemText}"
+                      Width="10" Height="10" Stretch="Uniform"
+                      Data="F1 M 20.5833,55.4167C 15.8333,55.4167 22.1667,49.875 22.1667,49.875L 25.3333,42.75L 31.6667,49.0833L 25.3333,52.25L 45.9167,52.25L 49.0833,55.4167L 20.5833,55.4167 Z M 36.4166,47.5L 33.25,47.5L 26.9167,41.1667L 26.9167,38L 36.4166,47.5 Z M 33.7922,33.7922C 31.7487,36.1262 31.0588,38.0282 30.4792,39.1875L 28.8958,37.6042C 28.8958,37.6042 26.9167,36.4167 31.6667,31.6667L 33.7922,33.7922 Z M 36.8125,45.5209L 31.6666,40.375C 32.5843,38.7691 33.1757,36.8972 34.8701,34.8702L 42.75,42.75C 42.75,42.75 38.3958,47.1042 36.8125,45.5209 Z M 36.3335,33.1669C 43.0389,25.5565 53.6589,16.7098 60.1063,11.079C 62.2302,12.8251 64.1438,14.8176 65.8035,17.0128L 44.3333,41.1667L 36.3335,33.1669 Z M 57.1116,8.87302L 58.5878,9.89903C 52.0599,15.7961 41.6159,25.1447 35.2855,32.1189L 33.25,30.0833L 57.1116,8.87302 Z"
+                    />
+                    <Rectangle
+                               Height="4"
+                               Margin="0,12,0,0"
+                               Fill="{Binding SelectedColor, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=xctk:ColorPicker}, Converter={StaticResource ColorToSolidColorBrushConverter}}" />
+                  </Grid>
+
+                  <Path Grid.Column="1"
+                        Width="7"
+                        Height="4"
+                        Data="M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z"
+                        Fill="{DynamicResource ItemText}" />
+                </Grid>
+              </Border>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource MouseOverBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource MouseOverBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder"
+                      Value="#80FFFFFF" />
+            </Trigger>
+
+            <Trigger Property="IsEnabled"
+                     Value="False">
+              <Setter Property="TextElement.Foreground"
+                      TargetName="OuterBorder"
+                      Value="#FF9E9E9E" />
+            </Trigger>
+
+            <Trigger Property="IsChecked"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource CheckedBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource CheckedBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1"
+                                       StartPoint="0,0">
+                    <GradientStop Color="#FFE7CBAD"
+                                  Offset="0" />
+                    <GradientStop Color="#FFF7D7B5"
+                                  Offset="0.1" />
+                    <GradientStop Color="#FFFFD38C"
+                                  Offset="0.36" />
+                    <GradientStop Color="#FFFFC75A"
+                                  Offset="0.36" />
+                    <GradientStop Color="#FFFFEFA5"
+                                  Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+
+            <Trigger Property="IsPressed"
+                     Value="True">
+              <Setter Property="Background"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource PressedBackgroundBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="OuterBorder"
+                      Value="{StaticResource PressedBorderBrush}" />
+              <Setter Property="BorderBrush"
+                      TargetName="InnerBorder"
+                      Value="Transparent" />
+            </Trigger>
+
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsChecked"
+                           Value="True" />
+                <Condition Property="IsMouseOver"
+                           Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background"
+                      TargetName="MiddleBorder">
+                <Setter.Value>
+                  <LinearGradientBrush EndPoint="0,1"
+                                       StartPoint="0,0">
+                    <GradientStop Color="#40FFFEFE"
+                                  Offset="0" />
+                    <GradientStop Color="#40FFFEFE"
+                                  Offset="0.39" />
+                    <GradientStop Color="#20FFCE68"
+                                  Offset="0.39" />
+                    <GradientStop Color="#20FFCE68"
+                                  Offset="0.69" />
+                    <GradientStop Color="#10FFFFFF"
+                                  Offset="1" />
+                  </LinearGradientBrush>
+                </Setter.Value>
+              </Setter>
+            </MultiTrigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!-- =================================================================== -->
+  <!-- Template                                                            -->
+  <!-- =================================================================== -->
+  <ControlTemplate x:Key="richTextBoxFormatBarTemplate" TargetType="{x:Type xctk:RichTextBoxFormatBar}">
+    <ControlTemplate.Resources>
+      <Style TargetType="{x:Type Separator}" BasedOn="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+    </ControlTemplate.Resources>
+    <Border CornerRadius="3"
+            BorderThickness="1"
+            BorderBrush="{DynamicResource WindowBorder}"
+            Background="{DynamicResource WindowBackground}">
+      <Grid Margin="5,0,5,5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Thumb x:Name="_dragWidget"
+               Height="10"
+               Template="{StaticResource ThumbControlTemplate}" />
+
+        <StackPanel Grid.Row="1">
+          <StackPanel Orientation="Horizontal">
+            <ComboBox x:Name="_cmbFontFamilies"
+                      IsEditable="True"
+                      Width="100"
+                      ToolTip="Font Family" />
+
+            <ComboBox x:Name="_cmbFontSizes"
+                      IsEditable="True"
+                      Width="43"
+                      ToolTip="Font Size"/>
+
+            <Separator />
+
+            <ToggleButton x:Name="_btnBullets"
+                          Style="{StaticResource FormatBarToggleButtonStyle}"
+                          Command="EditingCommands.ToggleBullets"
+                          CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                          ToolTip="Bullets">
+              <Ellipse Width="8" Height="8" Fill="{DynamicResource ItemText}" />
+            </ToggleButton>
+
+            <ToggleButton x:Name="_btnNumbers"
+                          Style="{StaticResource FormatBarToggleButtonStyle}"
+                          Command="EditingCommands.ToggleNumbering"
+                          CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                          ToolTip="Numbering">
+              <Label Content="1." FontWeight="Bold" Foreground="{DynamicResource ItemText}" />
+            </ToggleButton>
+
+          </StackPanel>
+
+          <StackPanel Orientation="Horizontal"
+                      Margin="0,3,0,0">
+            <ToggleButton x:Name="_btnBold"
+                          Style="{StaticResource FormatBarToggleButtonStyle}"
+                          Command="EditingCommands.ToggleBold"
+                          CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                          ToolTip="Bold">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="12" Height="12" Stretch="Uniform"
+                Data="F1 M 27,58L 27,20L 38.9937,20C 42.6524,20 45.549,20.7945 47.6837,22.3835C 49.8184,23.9725 50.8857,26.0421 50.8857,28.5924C 50.8857,30.7243 50.2849,32.5776 49.0833,34.1524C 47.8816,35.7273 46.2205,36.8455 44.1,37.5071L 44.1,37.6174C 46.6559,37.9171 48.6973,38.8926 50.2241,40.5437C 51.7509,42.1949 52.5143,44.3409 52.5143,46.9817C 52.5143,50.2615 51.2448,52.9178 48.7058,54.9507C 46.1668,56.9835 42.9606,58 39.087,58L 27,58 Z M 33.0143,24.8857L 33.0143,35.7429L 37.5009,35.7429C 39.644,35.7429 41.3249,35.224 42.5435,34.1864C 43.7621,33.1487 44.3714,31.6799 44.3714,29.7799C 44.3714,26.5171 42.2452,24.8857 37.9929,24.8857L 33.0143,24.8857 Z M 33.0143,40.6286L 33.0143,53.1143L 38.7817,53.1143C 41.0832,53.1143 42.8616,52.5502 44.117,51.4221C 45.3723,50.294 46,48.7403 46,46.7612C 46,42.6728 43.3253,40.6286 37.9759,40.6286L 33.0143,40.6286 Z"
+              />
+            </ToggleButton>
+            <ToggleButton x:Name="_btnItalic"
+                          Style="{StaticResource FormatBarToggleButtonStyle}"
+                          Command="{x:Static EditingCommands.ToggleItalic}"
+                          CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                          ToolTip="Italic">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="12" Height="12" Stretch="Uniform"
+                Data="F1 M 47.9383,20L 47.2449,24.05L 43.4449,24.05L 37.8979,53.95L 41.6979,53.95L 41.0046,58L 28.0617,58L 28.7551,53.95L 32.5551,53.95L 38.102,24.05L 34.302,24.05L 34.9954,20L 47.9383,20 Z"
+              />
+            </ToggleButton>
+            <ToggleButton x:Name="_btnUnderline"
+                          Style="{StaticResource FormatBarToggleButtonStyle}"
+                          Command="{x:Static EditingCommands.ToggleUnderline}"
+                          CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                          ToolTip="Underline">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="14" Height="14" Stretch="Uniform"
+                Data="F1 M 21,57L 21,53L 55,53L 55,57L 21,57 Z M 49.95,37.8725C 49.95,46.7597 45.9361,51.2033 37.9083,51.2033C 30.2206,51.2033 26.3767,46.9274 26.3767,38.3754L 26.3767,19.0167L 30.0033,19.0167L 30.0033,38.2408C 30.0033,44.7669 32.7705,48.03 38.305,48.03C 43.6505,48.03 46.3233,44.8779 46.3233,38.5738L 46.3233,19.0167L 49.95,19.0167L 49.95,37.8725 Z"
+              />
+            </ToggleButton>
+
+            <Separator />
+
+            <RadioButton x:Name="_btnAlignLeft"
+                         Style="{StaticResource FormatBarToggleButtonStyle}"
+                         Command="{x:Static EditingCommands.AlignLeft}"
+                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                         ToolTip="Align Left">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="14" Height="14" Stretch="Uniform"
+                Data="F1 M 53,19L 19,19L 19,25L 53,25L 53,19 Z M 49,52L 19,52L 19,58L 49,58L 49,52 Z M 38,41L 19,41L 19,47L 38,47L 38,41 Z M 44,30L 19,30L 19,36L 44,36L 44,30 Z"
+              />
+            </RadioButton>
+            <RadioButton x:Name="_btnAlignCenter"
+                         Style="{StaticResource FormatBarToggleButtonStyle}"
+                         Command="{x:Static EditingCommands.AlignCenter}"
+                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                         ToolTip="Align Center">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="14" Height="14" Stretch="Uniform"
+                Data="F1 M 19,19L 57,19L 57,25L 19,25L 19,19 Z M 22,52L 54,52L 54,58L 22,58L 22,52 Z M 29,41L 47,41L 47,47L 29,47L 29,41 Z M 25,30L 51,30L 51,36L 25,36L 25,30 Z"
+              />
+            </RadioButton>
+            <RadioButton x:Name="_btnAlignRight"
+                         Style="{StaticResource FormatBarToggleButtonStyle}"
+                         Command="{x:Static EditingCommands.AlignRight}"
+                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Target}"
+                         ToolTip="Align Right">
+              <Path 
+                Fill="{DynamicResource ItemText}"
+                Width="14" Height="14" Stretch="Uniform"
+                Data="F1 M 23,19L 57,19L 57,25L 23,25L 23,19 Z M 27,52L 57,52L 57,58L 27,58L 27,52 Z M 38,41L 57,41L 57,47L 38,47L 38,41 Z M 32,30L 57,30L 57,36L 32,36L 32,30 Z"
+              />
+            </RadioButton>
+
+            <Separator />
+
+            <xctk:ColorPicker x:Name="_cmbFontBackgroundColor"
+                               BorderThickness="0"
+                               ButtonStyle="{StaticResource FontBackgrounColorButtonStyle}"
+                               ToolTip="Text Highlight Color" />
+
+            <xctk:ColorPicker x:Name="_cmbFontColor"
+                               BorderThickness="0"
+                               ButtonStyle="{StaticResource FontColorButtonStyle}"
+                               ToolTip="Font Color" />
+
+          </StackPanel>
+
+        </StackPanel>
+      </Grid>
+    </Border>
+  </ControlTemplate>
+
+  <!-- =================================================================== -->
+  <!-- Style                                                               -->
+  <!-- =================================================================== -->
+  <Style TargetType="{x:Type xctk:RichTextBoxFormatBar}">
+    <Setter Property="Template" Value="{StaticResource richTextBoxFormatBarTemplate}" />
+    <Setter Property="Effect">
+      <Setter.Value>
+        <DropShadowEffect BlurRadius="5" Opacity=".25" />
+      </Setter.Value>
+    </Setter>
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="IsTabStop" Value="false" />
+  </Style>
+
+</ResourceDictionary>
