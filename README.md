@@ -39,6 +39,7 @@ The following controls have had style resources fully created for them:
  * RichTextBoxFormatBar
  * SplitButton
  * TimePicker
+ * ValueRangeTextBox
  * WatermarkTextBox
  * WatermarkComboBox
  
@@ -63,7 +64,6 @@ The following controls still need styles implementing for them:
 
  * CollectionControl
  * PrimitiveTypeCollEditor
- * ValueRangeTextBox
 
 The following controls will be implemented in separate libraries: 
  

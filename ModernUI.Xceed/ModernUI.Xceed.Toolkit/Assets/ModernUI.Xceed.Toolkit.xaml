@@ -25,6 +25,7 @@
         <ResourceDictionary Source="Controls/SplitButton.xaml" />
         <ResourceDictionary Source="Controls/TimePicker.xaml" />
         <ResourceDictionary Source="Controls/TimeSpanUpDown.xaml" />
+        <ResourceDictionary Source="Controls/ValueRangeTextBox.xaml" />
         <ResourceDictionary Source="Controls/WatermarkComboBox.xaml" />
         <ResourceDictionary Source="Controls/WatermarkTextBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
