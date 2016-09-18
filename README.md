@@ -70,4 +70,18 @@ The following controls will be implemented in separate libraries:
   
 ## Screenshots
 
-![ModernUI.Xceed.Toolkit (Dark)](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit.Dark.gif "ModernUI.Xceed.Toolkit (Dark)")
+![ModernUI.Xceed.Toolkit (Dark) - Calculator](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Calculator-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Calculator")
+
+![ModernUI.Xceed.Toolkit (Dark) - CheckList](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-CheckList-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - CheckList")
+
+![ModernUI.Xceed.Toolkit (Dark) - Collection Control](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Collection-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Collection Control")
+
+![ModernUI.Xceed.Toolkit (Dark) - Color Controls](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Color-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Color Controls")
+
+![ModernUI.Xceed.Toolkit (Dark) - Property Grid](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Property-Grid-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Property Grid")
+
+![ModernUI.Xceed.Toolkit (Dark) - RichTextBox](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-RichTextBox-Controls.png "ModernUI.Xceed.Toolkit (Dark) - RichTextBox")
+
+![ModernUI.Xceed.Toolkit (Dark) - Standard Controls](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Standard-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Standard Controls")
+
+![ModernUI.Xceed.Toolkit (Dark) - Up/Down Controls](https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Screenshots/ModernUI.Xceed.Toolkit-Dark-Up-Down-Controls.gif "ModernUI.Xceed.Toolkit (Dark) - Up/Down Controls")
