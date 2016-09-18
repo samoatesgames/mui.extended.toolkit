@@ -86,7 +86,7 @@
 
     <Style TargetType="{x:Type xctk:TimePicker}">
         <Setter Property="Background" Value="{DynamicResource InputBackground}" />
-        <Setter Property="Foreground" Value="{DynamicResource InputForeground}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputText}" />
         <Setter Property="BorderBrush" Value="{DynamicResource InputBorder}" />
         <Setter Property="BorderThickness" Value="1,1,0,1" />
         <Setter Property="Focusable" Value="False" />

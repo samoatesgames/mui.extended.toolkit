@@ -48,7 +48,7 @@
 
     <Style TargetType="{x:Type xctk:DateTimePicker}">
         <Setter Property="Background" Value="{DynamicResource InputBackground}" />
-        <Setter Property="Foreground" Value="{DynamicResource InputForeground}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputText}" />
         <Setter Property="BorderBrush" Value="{DynamicResource InputBorder}" />
         <Setter Property="BorderThickness" Value="1,1,0,1" />
         <Setter Property="Focusable" Value="False" />
@@ -132,7 +132,7 @@
                                         DisplayMode="{Binding CalendarDisplayMode, RelativeSource={RelativeSource TemplatedParent}}"/>
                                         <xctk:TimePicker x:Name="PART_TimeUpDown"
                                                           Background="{DynamicResource InputBackground}"
-                                                          Foreground="{DynamicResource InputForeground}" 
+                                                          Foreground="{DynamicResource InputText}" 
                                                           Format="{TemplateBinding TimeFormat}"
                                                           FormatString="{TemplateBinding TimeFormatString}"
                                                           Kind="{Binding Kind, RelativeSource={RelativeSource TemplatedParent}}"

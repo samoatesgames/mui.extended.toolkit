@@ -39,6 +39,8 @@
             <xctk:RangeSlider Margin="2" Minimum="-100" Maximum="100" LowerValue="-90" HigherValue="90" />
           
             <xctk:ValueRangeTextBox Margin="2" ValueDataType="{x:Type sys:Double}" MaxValue="10" MinValue="0" />
+
+            <xctk:PrimitiveTypeCollectionControl Margin="2" />
           
         </StackPanel>
     </ScrollViewer>

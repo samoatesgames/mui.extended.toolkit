@@ -11,6 +11,7 @@
                 <Label Content="Entry D" />
                 <Label Content="Entry E" />
             </xctk:CheckListBox>
+          
             <xctk:CheckComboBox Margin="2">
                 <Label Content="Entry A" />
                 <Label Content="Entry B" />

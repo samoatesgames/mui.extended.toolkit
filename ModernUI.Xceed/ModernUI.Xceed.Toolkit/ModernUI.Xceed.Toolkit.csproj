@@ -193,17 +193,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Images\AdvancedProperties11.png" />
-    <Resource Include="Assets\Images\Categorize16.png" />
-    <Resource Include="Assets\Images\ClearFilter16.png" />
-    <Resource Include="Assets\Images\Database11.png" />
-    <Resource Include="Assets\Images\Inheritance11.png" />
-    <Resource Include="Assets\Images\Local11.png" />
-    <Resource Include="Assets\Images\Resource11.png" />
-    <Resource Include="Assets\Images\SortAscending16.png" />
-    <Resource Include="Assets\Images\Style11.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Assets\Controls\NumericUpDown.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

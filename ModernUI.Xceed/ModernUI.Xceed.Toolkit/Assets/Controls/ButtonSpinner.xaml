@@ -51,7 +51,7 @@
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 
     <Style TargetType="{x:Type xctk:ButtonSpinner}">
-        <Setter Property="Background" Value="{DynamicResource ItemBackground}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ItemBorder}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Focusable" Value="False" />

@@ -810,7 +810,7 @@
                Value="False" />
             </Trigger>
 
-            <DataTrigger Binding="{Binding ElementName=_optionsImage, Path=ToolTip}"
+            <!--<DataTrigger Binding="{Binding ElementName=_optionsImage, Path=ToolTip}"
                    Value="{x:Static xctk:StringConstants.Local}">
               <Setter TargetName="_optionsImage"
                Property="Source"
@@ -845,7 +845,7 @@
               <Setter TargetName="_optionsImage"
                Property="Source"
                Value="../Images/AdvancedProperties11.png" />
-            </DataTrigger>
+            </DataTrigger>-->
           </ControlTemplate.Triggers>
         </ControlTemplate>
       </Setter.Value>
@@ -952,7 +952,7 @@
                 <Border x:Name="searchBoxContainer"
                 Grid.Column="1"
                 Margin="4,4,0,4"
-                Background="{DynamicResource InputBackground}"
+                Background="{DynamicResource WindowBackground}"
                 BorderBrush="{DynamicResource ItemBorder}"
                 BorderThickness="1"
                 Visibility="{Binding ShowSearchBox, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}">
