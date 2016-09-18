@@ -28,11 +28,13 @@ The following controls have had style resources fully created for them:
 
  * AutoSelectTextBox
  * Calculator
+ * CollectionControl
  * DropDownButton
  * DateTimePicker
  * MaskedTextBox
  * MultiLineTextEditor
  * NumericUpDown
+ * PrimitiveTypeCollEditor
  * PropertyGrid
  * RangeSlider
  * RichTextBox
@@ -60,10 +62,6 @@ The following controls have had style resources fully created for them:
 
 ### TODO
 
-The following controls still need styles implementing for them:
-
- * CollectionControl
- * PrimitiveTypeCollEditor
 
 The following controls will be implemented in separate libraries: 
  

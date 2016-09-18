@@ -12,6 +12,7 @@
             <mui:Link DisplayName="Calculator Control" Source="Pages\CalculatorControl.xaml" />
             <mui:Link DisplayName="Color Controls" Source="Pages\ColorControls.xaml" />
             <mui:Link DisplayName="Property Grid" Source="Pages\PropertyGrid.xaml" />
+            <mui:Link DisplayName="Collection Control" Source="Pages\CollectionControl.xaml" />
             <mui:Link DisplayName="Rich Text Control" Source="Pages\RichTextControl.xaml" />
         </mui:ModernTab.Links>
     </mui:ModernTab>

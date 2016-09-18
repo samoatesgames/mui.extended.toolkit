@@ -9,6 +9,7 @@
         <ResourceDictionary Source="Controls/CalculatorUpDown.xaml" />
         <ResourceDictionary Source="Controls/CheckListBox.xaml" />
         <ResourceDictionary Source="Controls/CheckComboBox.xaml" />
+        <ResourceDictionary Source="Controls/CollectionControl.xaml" />
         <ResourceDictionary Source="Controls/ColorCanvas.xaml" />
         <ResourceDictionary Source="Controls/ColorPicker.xaml" />
         <ResourceDictionary Source="Controls/DateTimePicker.xaml" />

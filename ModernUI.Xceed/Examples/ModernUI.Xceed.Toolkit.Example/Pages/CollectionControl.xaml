@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="ModernUI.Xceed.Toolkit.Example.Pages.CollectionControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:pages="clr-namespace:ModernUI.Xceed.Toolkit.Example.Pages">
+
+    <xctk:CollectionControl ItemsSource="{Binding Users}" NewItemTypes="{Binding NewItemTypes}" />
+  
+</UserControl>

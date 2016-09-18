@@ -107,11 +107,11 @@ namespace ModernUI.Xceed.Toolkit.Example.Pages
     {
         [Category("User")]
         [Description("The first name of the user.")]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = "Unkown";
 
         [Category("User")]
         [Description("The last name of the user.")]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = "Unkown";
 
         [Category("User")]
         [Description("The sex of the user (optional).")]
@@ -128,6 +128,11 @@ namespace ModernUI.Xceed.Toolkit.Example.Pages
         [Category("Job")]
         [Description("The salary of the user per year, in USD ($).")]
         public int Salary { get; set; }
+
+        public override string ToString()
+        {
+            return "User";
+        }
     }
 
     public enum Sex
