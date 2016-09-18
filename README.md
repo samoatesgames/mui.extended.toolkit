@@ -1,5 +1,7 @@
 # ModernUI.Xceed.Toolkit
 
+Latest Release: https://github.com/samoatesgames/mui.extended.toolkit/releases
+
 ## About
 
 ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.
