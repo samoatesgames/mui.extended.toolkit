@@ -1,0 +1,17 @@
+﻿<Application x:Class="ModernUI.Xceed.AvalonDock.Example.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ModernUI.Xceed.AvalonDock.Example"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
+        <ResourceDictionary Source="/ModernUI.Xceed.Toolkit;component/Assets/ModernUI.Xceed.Toolkit.xaml" />
+        <ResourceDictionary Source="/ModernUI.Xceed.AvalonDock;component/Assets/ModernUI.Xceed.AvalonDock.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <Color x:Key="AccentColor">#D61111</Color>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

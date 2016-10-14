@@ -1,0 +1,69 @@
+﻿<Page x:Class="ModernUI.Xceed.Toolkit.Example.Pages.AvalonDockExample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+      xmlns:system="clr-namespace:System;assembly=mscorlib"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      Title="AvalonDock">
+
+  <xcad:DockingManager AllowMixedOrientation="True">
+
+    <xcad:LayoutRoot>
+      <xcad:LayoutPanel Orientation="Horizontal">
+        <xcad:LayoutAnchorablePane DockWidth="200">
+          <xcad:LayoutAnchorable ContentId="properties" Title="Properties" CanHide="False" CanClose="False"
+                                    AutoHideWidth="240">
+            <xctk:PropertyGrid />
+          </xcad:LayoutAnchorable>
+        </xcad:LayoutAnchorablePane>
+        <xcad:LayoutDocumentPaneGroup >
+          <xcad:LayoutDocumentPane>
+            <xcad:LayoutDocument ContentId="document1" Title="Document 1">
+              <TextBox Text="Document 1 Content" AcceptsReturn="True"/>
+            </xcad:LayoutDocument>
+            <xcad:LayoutDocument ContentId="document2" Title="Document 2">
+              <TextBox Text="Document 2 Content" AcceptsReturn="True"/>
+            </xcad:LayoutDocument>
+          </xcad:LayoutDocumentPane>
+        </xcad:LayoutDocumentPaneGroup >
+        <xcad:LayoutAnchorablePaneGroup DockWidth="125">
+          <xcad:LayoutAnchorablePane>
+            <xcad:LayoutAnchorable ContentId="alarms" Title="Alarms">
+              <ListBox>
+                <system:String>Alarm 1</system:String>
+                <system:String>Alarm 2</system:String>
+                <system:String>Alarm 3</system:String>
+              </ListBox>
+            </xcad:LayoutAnchorable>
+            <xcad:LayoutAnchorable ContentId="journal" Title="Journal" >
+              <RichTextBox>
+                <FlowDocument>
+                  <Paragraph FontSize="14" FontFamily="Segoe">
+                    This is the content of the Journal Pane.
+                    <LineBreak/>
+                    A
+                    <Bold>RichTextBox</Bold> has been added here
+                  </Paragraph>
+                </FlowDocument>
+              </RichTextBox>
+            </xcad:LayoutAnchorable>
+          </xcad:LayoutAnchorablePane>
+        </xcad:LayoutAnchorablePaneGroup>
+      </xcad:LayoutPanel>
+
+      <xcad:LayoutRoot.LeftSide>
+        <xcad:LayoutAnchorSide>
+          <xcad:LayoutAnchorGroup>
+            <xcad:LayoutAnchorable Title="Agenda" ContentId="agenda">
+              <TextBlock Text="Agenda Content" Margin="10" TextWrapping="Wrap"/>
+            </xcad:LayoutAnchorable>
+            <xcad:LayoutAnchorable Title="Contacts" ContentId="contacts" >
+              <TextBlock Text="Contacts Content" Margin="10" TextWrapping="Wrap"/>
+            </xcad:LayoutAnchorable>
+          </xcad:LayoutAnchorGroup>
+        </xcad:LayoutAnchorSide>
+      </xcad:LayoutRoot.LeftSide>
+    </xcad:LayoutRoot>
+  </xcad:DockingManager>
+
+</Page>
