@@ -1,0 +1,13 @@
+﻿<Page x:Class="ModernUI.Standard.Controls.Example.Pages.ControlsRoot"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+      Title="Controls">
+
+    <mui:ModernTab SelectedSource="Pages\GroupBox.xaml" Layout="List">
+        <mui:ModernTab.Links>
+            <mui:Link DisplayName="GroupBox" Source="Pages\GroupBox.xaml" />
+        </mui:ModernTab.Links>
+    </mui:ModernTab>
+
+</Page>

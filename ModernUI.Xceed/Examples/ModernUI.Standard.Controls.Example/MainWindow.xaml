@@ -1,0 +1,30 @@
+﻿<mui:ModernWindow x:Class="ModernUI.Xceed.AvalonDock.Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        ContentSource="Pages/About.xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="ModernUI.Standard.Controls Example"
+        IsTitleVisible="True"
+        LogoData="F1 M 20,24.0001L 55.9999,24.0001C 57.6568,24.0001 58.9999,25.3432 58.9999,27.0001L 58.9999,49.0001C 58.9999,50.6569 57.6567,52.0001 55.9999,52.0001L 20,52.0001C 18.3431,52.0001 17,50.6569 17,49.0001L 17,27.0001C 17,25.3433 18.3431,24.0001 20,24.0001 Z M 22,31L 22,33L 51,33L 51,31L 22,31 Z M 22,37L 22,39L 44,39L 44,37L 22,37 Z M 22,43L 22,45L 51,45L 51,43L 22,43 Z"
+        Height="600" Width="800">
+
+  <mui:ModernWindow.TitleLinks>
+    <mui:Link DisplayName="License" Source="Pages/License.xaml" />
+    <mui:Link DisplayName="Help" Source="https://github.com/samoatesgames/mui.extended.toolkit" />
+  </mui:ModernWindow.TitleLinks>
+
+  <mui:ModernWindow.MenuLinkGroups>
+    <mui:LinkGroup DisplayName="About">
+      <mui:LinkGroup.Links>
+        <mui:Link Source="Pages/About.xaml" />
+      </mui:LinkGroup.Links>
+    </mui:LinkGroup>
+    <mui:LinkGroup DisplayName="Controls">
+      <mui:LinkGroup.Links>
+        <mui:Link Source="Pages/ControlsRoot.xaml" />
+      </mui:LinkGroup.Links>
+    </mui:LinkGroup>
+  </mui:ModernWindow.MenuLinkGroups>
+
+</mui:ModernWindow>

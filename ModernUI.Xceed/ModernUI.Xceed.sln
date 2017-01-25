@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.AvalonDock",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.AvalonDock.Example", "Examples\ModernUI.Xceed.AvalonDock.Example\ModernUI.Xceed.AvalonDock.Example.csproj", "{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Standard.Controls", "ModernUI.Standard.Controls\ModernUI.Standard.Controls.csproj", "{64A84980-CBCB-42AA-A048-EBF9B922020A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Standard.Controls.Example", "Examples\ModernUI.Standard.Controls.Example\ModernUI.Standard.Controls.Example.csproj", "{DBB481F2-308F-499A-BEED-327408DC774D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,30 @@ Global
 		{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68}.Release|x64.Build.0 = Release|x64
 		{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68}.Release|x86.ActiveCfg = Release|x86
 		{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68}.Release|x86.Build.0 = Release|x86
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|x64.ActiveCfg = Debug|x64
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|x64.Build.0 = Debug|x64
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|x86.ActiveCfg = Debug|x86
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Debug|x86.Build.0 = Debug|x86
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|x64.ActiveCfg = Release|x64
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|x64.Build.0 = Release|x64
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|x86.ActiveCfg = Release|x86
+		{64A84980-CBCB-42AA-A048-EBF9B922020A}.Release|x86.Build.0 = Release|x86
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|x64.ActiveCfg = Debug|x64
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|x64.Build.0 = Debug|x64
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|x86.ActiveCfg = Debug|x86
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Debug|x86.Build.0 = Debug|x86
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|x64.ActiveCfg = Release|x64
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|x64.Build.0 = Release|x64
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|x86.ActiveCfg = Release|x86
+		{DBB481F2-308F-499A-BEED-327408DC774D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +106,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C801FCF3-A992-40FD-9C03-AAF46F2C709C} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
 		{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
+		{DBB481F2-308F-499A-BEED-327408DC774D} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
 	EndGlobalSection
 EndGlobal
