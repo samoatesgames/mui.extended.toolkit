@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SamOatesGames.ModernUI.Xceed.Toolkit</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Sam Oates</authors>
+    <owners>Sam Oates</owners>
+    <licenseUrl>https://github.com/samoatesgames/mui.extended.toolkit/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/samoatesgames/mui.extended.toolkit</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Resources/icon_ModernUI.Xceed.Toolkit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.</description>
+    <releaseNotes>Initial release as a nuget package.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>ModernUI WPF Theme Extended Toolkit</tags>
+  </metadata>
+</package>

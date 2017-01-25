@@ -1,6 +1,7 @@
 # ModernUI.Xceed.Toolkit
 
 Latest Release: https://github.com/samoatesgames/mui.extended.toolkit/releases
+Nuget Package: https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolkit/
 
 ## About
 
