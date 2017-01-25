@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="ModernUI.Standard.Controls.Example.Pages.GroupBox"
+﻿<UserControl x:Class="ModernUI.Standard.Controls.Example.Pages.Expander"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,11 +8,11 @@
 
     <Grid>
 
-        <GroupBox Margin="16"  Header="GroupBox Header">
+        <Expander Margin="16"  Header="Expander Header">
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
-            Group box styled using a ModernUI based theme.
+            Expander styled using a ModernUI based theme.
           </TextBlock>
-        </GroupBox>
+        </Expander>
       
     </Grid>
 </UserControl>

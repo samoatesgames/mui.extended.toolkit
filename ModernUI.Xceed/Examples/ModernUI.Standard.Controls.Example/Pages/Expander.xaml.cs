@@ -2,11 +2,11 @@
 namespace ModernUI.Standard.Controls.Example.Pages
 {
     /// <summary>
-    /// Interaction logic for GroupBox.xaml
+    /// Interaction logic for Expander.xaml
     /// </summary>
-    public partial class GroupBox
+    public partial class Expander
     {
-        public GroupBox()
+        public Expander()
         {
             InitializeComponent();
         }

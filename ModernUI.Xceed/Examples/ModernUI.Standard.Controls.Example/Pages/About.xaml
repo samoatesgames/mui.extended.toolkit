@@ -4,6 +4,8 @@
       Title="About">
 
     <TextBlock TextWrapping="Wrap">
-        TODO
+      The aim of the ModernUI.Standard.Controls library is to implement
+      ModernUI styles for all standard windows controls which are not currently
+      implemented by the core library.
     </TextBlock>
 </Page>

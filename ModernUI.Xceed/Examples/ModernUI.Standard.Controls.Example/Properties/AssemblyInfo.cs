@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("ModernUI.Xceed.AvalonDock.Example")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Sam Oates Games")]
 [assembly: AssemblyProduct("ModernUI.Xceed.AvalonDock.Example")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright © Sam Oates  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

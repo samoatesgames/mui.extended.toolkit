@@ -6,7 +6,9 @@
 
     <mui:ModernTab SelectedSource="Pages\GroupBox.xaml" Layout="List">
         <mui:ModernTab.Links>
-            <mui:Link DisplayName="GroupBox" Source="Pages\GroupBox.xaml" />
+          <mui:Link DisplayName="GroupBox" Source="Pages\GroupBox.xaml" />
+          <mui:Link DisplayName="Expander" Source="Pages\Expander.xaml" />
+          <mui:Link DisplayName="Tab Control" Source="Pages\TabControl.xaml" />
         </mui:ModernTab.Links>
     </mui:ModernTab>
 
