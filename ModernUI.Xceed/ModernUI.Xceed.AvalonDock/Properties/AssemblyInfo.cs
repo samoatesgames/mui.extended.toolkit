@@ -1,36 +1,69 @@
-﻿using System.Reflection;
+﻿/*************************************************************************************
+
+   Extended WPF Toolkit
+
+   Copyright (C) 2007-2013 Xceed Software Inc.
+
+   This program is provided to you under the terms of the Microsoft Public
+   License (Ms-PL) as published at http://wpftoolkit.codeplex.com/license 
+
+   For more features, controls, and fast professional support,
+   pick up the Plus Edition at http://xceed.com/wpf_toolkit
+
+   Stay informed: follow @datagrid on Twitter or Like http://facebook.com/datagrids
+
+  ***********************************************************************************/
+
+using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Windows;
+using System.Windows.Markup;
+using System;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ModernUI.Xceed.AvalonDock")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ModernUI.Xceed.AvalonDock")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyTitle( "Xceed Extended WPF Toolkit - AvalonDock Metro Theme" )]
+[assembly: AssemblyDescription( "This assembly implements the Metro Theme for the AvalonDock layout system." )]
+
+[assembly: AssemblyCompany( "Xceed Software Inc." )]
+[assembly: AssemblyProduct( "Xceed Extended WPF Toolkit - AvalonDock" )]
+[assembly: AssemblyCopyright( "Copyright (C) Xceed Software Inc. 2007-2014" )]
+
+
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+[assembly: CLSCompliant( true )]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("10fae934-1213-48f3-99f7-3ddc7a196838")]
+//In order to begin building localizable applications, set 
+//<UICulture>CultureYouAreCodingWith</UICulture> in your .csproj file
+//inside a <PropertyGroup>.  For example, if you are using US english
+//in your source files, set the <UICulture> to en-US.  Then uncomment
+//the NeutralResourceLanguage attribute below.  Update the "en-US" in
+//the line below to match the UICulture setting in the project file.
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+//[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
+
+
+[assembly: ThemeInfo(
+    ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
+    //(used if a resource is not found in the page, 
+    // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
+    //(used if a resource is not found in the page, 
+    // app, or any theme specific resource dictionaries)
+)]
+
+
+[assembly: XmlnsDefinition( "http://schemas.xceed.com/wpf/xaml/avalondock", "Xceed.Wpf.AvalonDock.Themes" )]
+
+#pragma warning disable 1699
+//[assembly: AssemblyDelaySign( false )]
+//[assembly: AssemblyKeyFile(@"..\..\sn.snk")]
+//[assembly: AssemblyKeyName( "" )]
+#pragma warning restore 1699

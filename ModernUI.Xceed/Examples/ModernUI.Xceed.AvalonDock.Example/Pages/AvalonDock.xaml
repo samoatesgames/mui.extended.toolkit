@@ -4,10 +4,15 @@
       xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
       xmlns:system="clr-namespace:System;assembly=mscorlib"
       xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:muiXceed="clr-namespace:ModernUI.Xceed.AvalonDock;assembly=ModernUI.Xceed.AvalonDock"
       Title="AvalonDock">
 
   <xcad:DockingManager AllowMixedOrientation="True">
 
+      <xcad:DockingManager.Theme>
+            <muiXceed:ModernUiTheme />
+      </xcad:DockingManager.Theme>
+      
     <xcad:LayoutRoot>
       <xcad:LayoutPanel Orientation="Horizontal">
         <xcad:LayoutAnchorablePane DockWidth="200">

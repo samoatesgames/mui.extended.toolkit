@@ -9,7 +9,6 @@
         <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
         <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
         <ResourceDictionary Source="/ModernUI.Xceed.Toolkit;component/Assets/ModernUI.Xceed.Toolkit.xaml" />
-        <ResourceDictionary Source="/ModernUI.Xceed.AvalonDock;component/Assets/ModernUI.Xceed.AvalonDock.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <Color x:Key="AccentColor">#D61111</Color>
     </ResourceDictionary>

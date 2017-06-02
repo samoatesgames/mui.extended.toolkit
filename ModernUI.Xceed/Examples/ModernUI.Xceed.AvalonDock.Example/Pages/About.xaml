@@ -4,6 +4,14 @@
       Title="About">
 
     <TextBlock TextWrapping="Wrap">
-        TODO
+        ModernUI.Xceed.AvalonDock contains all style resources to seamlessly integrate Xceeds AvalonDock into the ModernUI framework.
+        <LineBreak />
+        <LineBreak />
+        WPF Extended Toolkit:
+        <Hyperlink NavigateUri="http://wpftoolkit.codeplex.com/">http://wpftoolkit.codeplex.com/</Hyperlink>
+        <LineBreak />
+        ModernUI Framework:
+        <Hyperlink NavigateUri="https://github.com/firstfloorsoftware/mui">https://github.com/firstfloorsoftware/mui</Hyperlink>
+        <LineBreak />
     </TextBlock>
 </Page>
