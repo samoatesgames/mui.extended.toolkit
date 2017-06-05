@@ -129,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\AdvancedColorPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ControlsRoot.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -153,6 +157,9 @@
   <ItemGroup>
     <Compile Include="Pages\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdvancedColorPicker.xaml.cs">
+      <DependentUpon>AdvancedColorPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ControlsRoot.xaml.cs">
       <DependentUpon>ControlsRoot.xaml</DependentUpon>
@@ -201,6 +208,10 @@
     <ProjectReference Include="..\..\ModernUI.Standard.Controls\ModernUI.Standard.Controls.csproj">
       <Project>{64a84980-cbcb-42aa-a048-ebf9b922020a}</Project>
       <Name>ModernUI.Standard.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ModernUI.Xceed.Toolkit\ModernUI.Xceed.Toolkit.csproj">
+      <Project>{5a634859-f873-42b4-a533-f05404a22378}</Project>
+      <Name>ModernUI.Xceed.Toolkit</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
