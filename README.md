@@ -8,7 +8,7 @@ Nuget Package: https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolk
 
 ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.
 
- * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/
+ * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 2.9.0
  * ModernUI Framework: https://github.com/firstfloorsoftware/mui
 
 ## Controls
@@ -64,12 +64,12 @@ The following controls have had style resources fully created for them:
  * ButtonSpinner
  * ChromeButton
 
-### TODO
+### Aditional Libraries
 
-
+  * AvalonDock
+ 
 The following controls will be implemented in separate libraries: 
  
- * AvalonDock
  * DataGrid
   
 ## Screenshots
