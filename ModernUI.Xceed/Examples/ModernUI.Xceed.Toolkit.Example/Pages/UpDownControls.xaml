@@ -5,15 +5,15 @@
     <ScrollViewer>
         <StackPanel>
             <xctk:ByteUpDown Watermark="Byte Up/Down Example..." Margin="2" />
-            <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
-            <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
             <xctk:DecimalUpDown Watermark="Decimal Up/Down Example..." Margin="2" />
             <xctk:DoubleUpDown Watermark="Double Up/Down Example..." Margin="2" />
             <xctk:IntegerUpDown Watermark="Integer Up/Down Example..." Margin="2" />
             <xctk:LongUpDown Watermark="Long Up/Down Example..." Margin="2" />
             <xctk:ShortUpDown Watermark="Short Up/Down Example..." Margin="2" />
             <xctk:SingleUpDown Watermark="Single Up/Down Example..." Margin="2" />
+            <xctk:DateTimeUpDown Watermark="DateTime Up/Down Example..." Margin="2" />
             <xctk:TimeSpanUpDown Watermark="TimeSpan Up/Down Example..." Margin="2" />
-        </StackPanel>
+            <xctk:CalculatorUpDown Watermark="Calculator Up/Down Example..." Margin="2" />
+</StackPanel>
     </ScrollViewer>
 </UserControl>

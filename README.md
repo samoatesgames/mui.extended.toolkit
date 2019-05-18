@@ -8,7 +8,7 @@ Nuget Package: https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolk
 
 ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.
 
- * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 2.9.0
+ * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 3.5.0
  * ModernUI Framework: https://github.com/firstfloorsoftware/mui
 
 ## Controls
