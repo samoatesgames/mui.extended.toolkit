@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.Toolkit", "ModernUI.Xceed.Toolkit\ModernUI.Xceed.Toolkit.csproj", "{5A634859-F873-42B4-A533-F05404A22378}"
+	ProjectSection(ProjectDependencies) = postProject
+		{10FAE934-1213-48F3-99F7-3DDC7A196838} = {10FAE934-1213-48F3-99F7-3DDC7A196838}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUI.Xceed.Toolkit.Example", "Examples\ModernUI.Xceed.Toolkit.Example\ModernUI.Xceed.Toolkit.Example.csproj", "{C801FCF3-A992-40FD-9C03-AAF46F2C709C}"
 EndProject
@@ -107,5 +110,8 @@ Global
 		{C801FCF3-A992-40FD-9C03-AAF46F2C709C} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
 		{67C01EBD-F8B8-44F0-BF71-AAA6B8CA0C68} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
 		{DBB481F2-308F-499A-BEED-327408DC774D} = {4F6AE0D8-9F0C-4B62-A9E5-2E649D6196F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D55258CF-FB7E-4913-B3BF-653A3B90CE37}
 	EndGlobalSection
 EndGlobal

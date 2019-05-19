@@ -1,16 +1,16 @@
 # ModernUI.Xceed.Toolkit
 
-Latest Release: https://github.com/samoatesgames/mui.extended.toolkit/releases
-
-Nuget Package: https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolkit/
-
 ## About
 
 ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.
 
  * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 3.5.0
- * ModernUI Framework: https://github.com/firstfloorsoftware/mui
+ * ModernUI Framework: https://github.com/firstfloorsoftware/mui - Built against version 1.0.9
 
+[![GitHub](https://img.shields.io/github/license/samoatesgames/mui.extended.toolkit.svg?style=flat-square)](https://github.com/samoatesgames/mui.extended.toolkit/blob/master/LICENSE)
+[![Nuget](https://img.shields.io/nuget/dt/mui.extended.toolkit.svg?label=Nuget&style=flat-square)](https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolkit/)
+
+ 
 ## Controls
 
 The following controls have had style resources fully created for them:

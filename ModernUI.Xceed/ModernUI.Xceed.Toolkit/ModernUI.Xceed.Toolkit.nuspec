@@ -2,17 +2,24 @@
 <package >
   <metadata>
     <id>SamOatesGames.ModernUI.Xceed.Toolkit</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>Sam Oates</authors>
-    <owners>Sam Oates</owners>
-    <licenseUrl>https://github.com/samoatesgames/mui.extended.toolkit/blob/master/LICENSE</licenseUrl>
+    <version>0.3.0</version>
+    <authors>SamOatesGames</authors>
+    <owners>SamOatesGames</owners>
+    <licenseUrl>https://github.com/samoatesgames/mui.extended.toolkit/raw/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/samoatesgames/mui.extended.toolkit</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/samoatesgames/mui.extended.toolkit/master/Resources/icon_ModernUI.Xceed.Toolkit.png</iconUrl>
+    <iconUrl>https://github.com/samoatesgames/mui.extended.toolkit/raw/master/ModernUI.Xceed/Examples/ModernUI.Xceed.Toolkit.Example/Resources/Icon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.</description>
-    <releaseNotes>Initial release as a nuget package.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
-    <tags>ModernUI WPF Theme Extended Toolkit</tags>
+    <description>Modern UI support for the Extended WPF Toolkit</description>
+    <releaseNotes>Update to support Extended Toolkit version 3.5.0</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>CSharp ModernUI Avalon Dock Extended Toolkit Xceed</tags>
+	<dependencies>
+		<dependency id="ModernUI.WPF" version="1.0.9" />
+		<dependency id="Extended.Wpf.Toolkit" version="3.5.0" />
+	</dependencies>
   </metadata>
+  <files>
+    <file src="ModernUI.Xceed.Toolkit.dll" target="lib\net45" />
+    <file src="..\..\..\ModernUI.Xceed.AvalonDock\bin\Release\ModernUI.Xceed.AvalonDock.dll" target="lib\net45" />
+  </files>
 </package>
