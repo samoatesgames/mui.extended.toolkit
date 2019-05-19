@@ -8,7 +8,7 @@ ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xcee
  * ModernUI Framework: https://github.com/firstfloorsoftware/mui - Built against version 1.0.9
 
 [![GitHub](https://img.shields.io/github/license/samoatesgames/mui.extended.toolkit.svg?style=flat-square)](https://github.com/samoatesgames/mui.extended.toolkit/blob/master/LICENSE)
-[![Nuget](https://img.shields.io/nuget/dt/mui.extended.toolkit.svg?label=Nuget&style=flat-square)](https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolkit/)
+[![Nuget](https://img.shields.io/nuget/dt/SamOatesGames.ModernUI.Xceed.Toolkit.svg?label=Nuget&style=flat-square)](https://www.nuget.org/packages/SamOatesGames.ModernUI.Xceed.Toolkit/)
 
  
 ## Controls
