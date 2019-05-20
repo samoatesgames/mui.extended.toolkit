@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ModernUI.Xceed.Toolkit</id>
+    <id>ModernUI.Xceed.AvalonDock</id>
     <version>0.3.1</version>
     <authors>SamOatesGames</authors>
     <owners>SamOatesGames</owners>
@@ -12,13 +12,13 @@
     <description>Modern UI support for the Extended WPF Toolkit</description>
     <releaseNotes>Update to support Extended Toolkit version 3.5.0</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>CSharp ModernUI Extended Toolkit Xceed</tags>
+    <tags>CSharp ModernUI Avalon Dock Xceed</tags>
 	<dependencies>
 		<dependency id="ModernUI.WPF" version="1.0.9" />
 		<dependency id="Extended.Wpf.Toolkit" version="3.5.0" />
 	</dependencies>
   </metadata>
   <files>
-    <file src="ModernUI.Xceed.Toolkit.dll" target="lib\net45" />
+    <file src="ModernUI.Xceed.AvalonDock.dll" target="lib\net45" />
   </files>
 </package>

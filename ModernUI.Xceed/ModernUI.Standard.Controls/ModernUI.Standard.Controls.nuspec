@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ModernUI.Xceed.Toolkit</id>
+    <id>ModernUI.Standard.Controls</id>
     <version>0.3.1</version>
     <authors>SamOatesGames</authors>
     <owners>SamOatesGames</owners>
@@ -9,16 +9,15 @@
     <projectUrl>https://github.com/samoatesgames/mui.extended.toolkit</projectUrl>
     <iconUrl>https://github.com/samoatesgames/mui.extended.toolkit/raw/master/ModernUI.Xceed/Examples/ModernUI.Xceed.Toolkit.Example/Resources/Icon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Modern UI support for the Extended WPF Toolkit</description>
-    <releaseNotes>Update to support Extended Toolkit version 3.5.0</releaseNotes>
+    <description>Additional ModernUI styles for some standard WPF controls</description>
+    <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>CSharp ModernUI Extended Toolkit Xceed</tags>
+    <tags>CSharp ModernUI Avalon Dock Xceed</tags>
 	<dependencies>
 		<dependency id="ModernUI.WPF" version="1.0.9" />
-		<dependency id="Extended.Wpf.Toolkit" version="3.5.0" />
 	</dependencies>
   </metadata>
   <files>
-    <file src="ModernUI.Xceed.Toolkit.dll" target="lib\net45" />
+    <file src="ModernUI.Standard.Controls.dll" target="lib\net45" />
   </files>
 </package>

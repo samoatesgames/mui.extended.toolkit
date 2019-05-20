@@ -129,10 +129,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\AdvancedColorPicker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\ControlsRoot.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -157,9 +153,6 @@
   <ItemGroup>
     <Compile Include="Pages\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AdvancedColorPicker.xaml.cs">
-      <DependentUpon>AdvancedColorPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ControlsRoot.xaml.cs">
       <DependentUpon>ControlsRoot.xaml</DependentUpon>

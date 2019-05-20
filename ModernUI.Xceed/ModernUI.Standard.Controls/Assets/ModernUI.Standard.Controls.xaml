@@ -3,7 +3,6 @@
 
   <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Controls/GroupBox.xaml" />
-        <ResourceDictionary Source="Controls/AdvancedColorCanvas/Generic.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
