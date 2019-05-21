@@ -4,6 +4,7 @@
   <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Controls/Expander.xaml" />
         <ResourceDictionary Source="Controls/GroupBox.xaml" />
+        <ResourceDictionary Source="Controls/TabControl.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
