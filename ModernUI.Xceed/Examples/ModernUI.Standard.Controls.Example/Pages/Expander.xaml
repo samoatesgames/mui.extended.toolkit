@@ -6,13 +6,38 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300">
 
-    <Grid>
+    <StackPanel>
 
-        <Expander Margin="16"  Header="Expander Header">
+        <Expander Margin="16" Header="FlowDirection: Left to Right">
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
             Expander styled using a ModernUI based theme.
           </TextBlock>
         </Expander>
-      
-    </Grid>
+
+        <Expander Margin="16" Header="FlowDirection: Right to Left" FlowDirection="RightToLeft">
+            <StackPanel FlowDirection="LeftToRight">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                    Expander styled using a ModernUI based theme.
+                </TextBlock>
+            </StackPanel>
+        </Expander>
+
+        <Expander Margin="16" Header="Expander Direction: Right" ExpandDirection="Right">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                Expander styled using a ModernUI based theme.
+            </TextBlock>
+        </Expander>
+
+        <Expander Margin="16" Header="Expander Direction: Left" ExpandDirection="Left">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                Expander styled using a ModernUI based theme.
+            </TextBlock>
+        </Expander>
+
+        <Expander Margin="16" Header="Expander Direction: Up" ExpandDirection="Up">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                Expander styled using a ModernUI based theme.
+            </TextBlock>
+        </Expander>
+    </StackPanel>
 </UserControl>
