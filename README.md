@@ -4,7 +4,7 @@
 
 ModernUI.Xceed.Toolkit contains all style resources to seamlessly integrate Xceeds WPF extended toolkit into the ModernUI framework.
 
- * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 3.5.0
+ * WPF Extended Toolkit: http://wpftoolkit.codeplex.com/ - Built against version 3.6.0
  * ModernUI Framework: https://github.com/firstfloorsoftware/mui - Built against version 1.0.9
 
 [![GitHub](https://img.shields.io/github/license/samoatesgames/mui.extended.toolkit.svg?style=flat-square)](https://github.com/samoatesgames/mui.extended.toolkit/blob/master/LICENSE)
