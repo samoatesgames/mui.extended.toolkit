@@ -8,7 +8,8 @@
         <mui:ModernTab.Links>
           <mui:Link DisplayName="GroupBox" Source="Pages\GroupBox.xaml" />
           <mui:Link DisplayName="Expander" Source="Pages\Expander.xaml" />
-            <mui:Link DisplayName="Tab Control" Source="Pages\TabControl.xaml" />
+          <mui:Link DisplayName="Tab Control" Source="Pages\TabControl.xaml" />
+          <mui:Link DisplayName="ToggleSwitch" Source="Pages\ToggleSwitch.xaml" />
         </mui:ModernTab.Links>
     </mui:ModernTab>
 

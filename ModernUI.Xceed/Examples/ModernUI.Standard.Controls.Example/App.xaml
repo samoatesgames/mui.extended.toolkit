@@ -8,6 +8,7 @@
         <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
         <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
         <ResourceDictionary Source="/ModernUI.Standard.Controls;component/Assets/ModernUI.Standard.Controls.xaml" />
+        <ResourceDictionary Source="/ModernUI.ToggleSwitch;component/Assets/ModernUI.ToggleSwitch.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <Color x:Key="AccentColor">#7777FF</Color>
     </ResourceDictionary>

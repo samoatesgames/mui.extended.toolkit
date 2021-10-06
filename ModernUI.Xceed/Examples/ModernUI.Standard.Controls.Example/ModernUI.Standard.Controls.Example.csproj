@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ModernUI.Standard.Controls.Example</RootNamespace>
     <AssemblyName>ModernUI.Standard.Controls.Example</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -96,6 +97,9 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="ToggleSwitch, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ToggleSwitch.1.2.0\lib\net46\ToggleSwitch.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -141,6 +145,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ToggleSwitch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\About.xaml.cs">
@@ -160,6 +168,9 @@
     </Compile>
     <Compile Include="Pages\TabControl.xaml.cs">
       <DependentUpon>TabControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ToggleSwitch.xaml.cs">
+      <DependentUpon>ToggleSwitch.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -193,6 +204,10 @@
     <ProjectReference Include="..\..\ModernUI.Standard.Controls\ModernUI.Standard.Controls.csproj">
       <Project>{64a84980-cbcb-42aa-a048-ebf9b922020a}</Project>
       <Name>ModernUI.Standard.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ModernUI.Xceed.ToggleSwitch\ModernUI.ToggleSwitch.csproj">
+      <Project>{6fe4ecd7-1a0f-4646-9321-67e180b0d23f}</Project>
+      <Name>ModernUI.ToggleSwitch</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\ModernUI.Xceed.Toolkit\ModernUI.Xceed.Toolkit.csproj">
       <Project>{5a634859-f873-42b4-a533-f05404a22378}</Project>
